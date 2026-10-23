@@ -12,6 +12,7 @@ staticfiles/
 
 # Environments & secrets
 .env
+sandbox_start.sh
 
 # Local artifacts
 .preview/
