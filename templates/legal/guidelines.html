@@ -1,0 +1,46 @@
+{% extends "legal/_base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Community guidelines" %} — {{ site_name }}{% endblock %}
+{% block legal_title %}{% trans "Community guidelines" %}{% endblock %}
+
+{% block legal_body %}
+<div class="legal-body">
+  <p>These guidelines are the short version of how we want this place to feel. They apply to topics, replies, profiles, messages and reports. By using {{ site_name }}, you agree to follow them.</p>
+
+  <h2>1. Be a person, and be decent</h2>
+  <p>Assume good faith until proven otherwise. Critique ideas, not people. No harassment, hate speech, threats, doxxing, or sexual content involving minors. There is no “just joking” exception for cruelty.</p>
+
+  <h2>2. Stay on topic</h2>
+  <p>Use the closest category and keep threads focused. If a conversation drifts, start a new topic. Duplicate posts may be merged or removed.</p>
+
+  <h2>3. Search first, then ask</h2>
+  <p>A quick search often answers the question faster. When you ask, include what you tried, what you expected, and what happened. Screenshots and logs help — remove personal data first.</p>
+
+  <h2>4. No spam or disguised promotion</h2>
+  <p>Do not post unsolicited advertising, affiliate links, bulk messages, or repetitive content. Sharing your own work is welcome in Showcase when it is relevant and disclosed. Moderators may remove promotion that overwhelms the community.</p>
+
+  <h2>5. Protect privacy</h2>
+  <p>Do not publish someone else’s personal information, private messages, or confidential material without permission. Do not post credentials, API keys, or identity documents. If you accidentally do, report it so we can remove it quickly.</p>
+
+  <h2>6. Respect intellectual property</h2>
+  <p>Quote and link rather than copying long passages. Credit creators. If you believe content infringes your rights, contact <a href="mailto:{{ legal_contact_email }}">{{ legal_contact_email }}</a> with the details.</p>
+
+  <h2>7. Use reports, not pile-ons</h2>
+  <p>If something breaks these rules, use the Report link. Do not reply with abuse, and do not organise mass reports against a person. False reports are themselves a violation.</p>
+
+  <h2>8. Language</h2>
+  <p>You may post in English, 中文, 日本語 or Español. Everyone is welcome to write in the language they know best. Translation tools are fine; clarity is better than perfect grammar.</p>
+
+  <h2>What happens when a rule is broken</h2>
+  <ul>
+    <li><strong>Light:</strong> a note from a moderator, or content hidden pending edit.</li>
+    <li><strong>Repeated or serious:</strong> temporary suspension of posting privileges.</li>
+    <li><strong>Severe:</strong> immediate removal and permanent ban, including for threats, doxxing, or sexual content involving minors.</li>
+  </ul>
+  <p>We aim to explain decisions. If you think we got it wrong, reply to the moderation message or email <a href="mailto:{{ legal_contact_email }}">{{ legal_contact_email }}</a> within 14 days.</p>
+
+  <h2>The spirit of the rules</h2>
+  <p>This is an MVP test build. Tools and policies will evolve. If something here feels unfair or unclear, tell us in <em>Help &amp; feedback</em> — that is exactly the kind of feedback we need.</p>
+</div>
+{% endblock %}

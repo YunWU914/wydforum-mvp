@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Server error" %} — {{ site_name }}{% endblock %}
+
+{% block content %}
+<div class="auth-wrap auth-wrap-single">
+  <section class="card auth-card center-card">
+    <p class="eyebrow">500</p>
+    <h1>{% trans "Something went wrong on our side" %}</h1>
+    <p>{% trans "The error has been logged. Please try again in a moment." %}</p>
+    <a class="btn btn-primary" href="{% url 'home' %}">{% trans "Back to discussions" %}</a>
+  </section>
+</div>
+{% endblock %}

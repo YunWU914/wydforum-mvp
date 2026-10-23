@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{{ topic.title }} — {{ site_name }}{% endblock %}
+{% block meta_description %}{{ topic.excerpt }}{% endblock %}
+
+{% block content %}
+<nav class="breadcrumb" aria-label="{% trans 'Breadcrumb' %}">
+  <a href="{% url 'home' %}">{% trans "Discussions" %}</a>
+  <span aria-hidden="true">/</span>
+  <a href="{% url 'home' %}?category={{ topic.category.slug }}">{{ topic.category.name }}</a>
+</nav>
+
+<div class="layout">
+  <div class="thread">
+    <article class="post-card">
+      <header class="post-head">
+        <div class="post-title-row">
+          {% if topic.is_pinned %}<span class="badge badge-pin">{% trans "Pinned" %}</span>{% endif %}
+          {% if topic.is_locked %}<span class="badge">{% trans "Locked" %}</span>{% endif %}
+          {% if topic.is_hidden %}<span class="badge badge-danger">{% trans "Hidden" %}</span>{% endif %}
+          <h1>{{ topic.title }}</h1>
+        </div>
+        <div class="post-byline">
+          <a class="avatar" href="{% url 'profile' topic.author.username %}" aria-hidden="true" tabindex="-1">{{ topic.author.username|slice:":2"|upper }}</a>
+          <div>
+            <a class="author" href="{% url 'profile' topic.author.username %}">{{ topic.author.username }}</a>
+            <div class="meta-line">
+              <time datetime="{{ topic.created_at|date:'c' }}">{{ topic.created_at|date:"M j, Y, H:i" }}</time>
+              <span aria-hidden="true">·</span>
+              <span>{{ topic.views }} {% trans "views" %}</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="prose post-body">{{ topic.body|linebreaks }}</div>
+
+      <footer class="post-actions">
+        {% if user.is_authenticated %}
+          <a href="{% url 'report' 'topic' topic.pk %}">{% trans "Report" %}</a>
+        {% endif %}
+        {% if user.is_staff %}
+          <a href="/admin/community/topic/{{ topic.pk }}/change/">{% trans "Moderate" %}</a>
+        {% endif %}
+        <a href="#reply-form">{% trans "Reply" %}</a>
+      </footer>
+    </article>
+
+    <section class="replies" aria-labelledby="replies-title">
+      <div class="section-head">
+        <h2 id="replies-title">{{ replies|length }} {% trans "replies" %}</h2>
+      </div>
+
+      {% for reply in replies %}
+        <article class="reply" id="reply-{{ reply.pk }}">
+          <a class="avatar" href="{% url 'profile' reply.author.username %}" aria-hidden="true" tabindex="-1">{{ reply.author.username|slice:":2"|upper }}</a>
+          <div class="reply-main">
+            <header class="reply-head">
+              <a class="author" href="{% url 'profile' reply.author.username %}">{{ reply.author.username }}</a>
+              {% if reply.author_id == topic.author_id %}<span class="badge badge-op">{% trans "Original poster" %}</span>{% endif %}
+              {% if reply.is_hidden %}<span class="badge badge-danger">{% trans "Hidden" %}</span>{% endif %}
+              <time datetime="{{ reply.created_at|date:'c' }}">{{ reply.created_at|timesince }} {% trans "ago" %}</time>
+              {% if user.is_authenticated %}
+                <a class="reply-report" href="{% url 'report' 'reply' reply.pk %}">{% trans "Report" %}</a>
+              {% endif %}
+            </header>
+            <div class="prose">{{ reply.body|linebreaks }}</div>
+          </div>
+        </article>
+      {% empty %}
+        <p class="muted empty-replies">{% trans "No replies yet. Start the conversation." %}</p>
+      {% endfor %}
+    </section>
+
+    <section id="reply-form" class="reply-form-wrap" aria-labelledby="reply-form-title">
+      <h2 id="reply-form-title">{% trans "Join the conversation" %}</h2>
+
+      {% if topic.is_locked %}
+        <div class="notice">{% trans "This topic is locked. New replies are disabled." %}</div>
+      {% elif can_reply %}
+        <form method="post" action="{% url 'reply_create' topic.pk %}" class="card form-card">
+          {% csrf_token %}
+          {% if reply_form.non_field_errors %}
+            <div class="form-alert">{% for error in reply_form.non_field_errors %}<p>{{ error }}</p>{% endfor %}</div>
+          {% endif %}
+          {% include "partials/_field.html" with field=reply_form.body %}
+          {% include "partials/_captcha.html" %}
+          {{ reply_form.hp_field }}{{ reply_form.ts }}
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">{% trans "Post reply" %}</button>
+            <span class="help">{% trans "Be kind. Critique ideas, not people." %}</span>
+          </div>
+        </form>
+      {% elif user.is_authenticated %}
+        <div class="notice">
+          {% trans "Confirm your email address before posting." %}
+          <a href="{% url 'verify_email' %}">{% trans "Resend activation email" %}</a>
+        </div>
+      {% else %}
+        <div class="notice">
+          {% trans "Sign in to reply, or create a free account." %}
+          <a href="{% url 'login' %}?next={{ request.path|urlencode }}">{% trans "Sign in" %}</a>
+          <span aria-hidden="true">·</span>
+          <a href="{% url 'register' %}">{% trans "Join" %}</a>
+        </div>
+      {% endif %}
+    </section>
+  </div>
+
+  <aside class="sidebar">
+    <section class="card">
+      <h2>{% trans "About this topic" %}</h2>
+      <dl class="detail-list">
+        <div><dt>{% trans "Category" %}</dt><dd><a href="{% url 'home' %}?category={{ topic.category.slug }}">{{ topic.category.name }}</a></dd></div>
+        <div><dt>{% trans "Started" %}</dt><dd>{{ topic.created_at|date:"M j, Y" }}</dd></div>
+        <div><dt>{% trans "Replies" %}</dt><dd>{{ replies|length }}</dd></div>
+        <div><dt>{% trans "Views" %}</dt><dd>{{ topic.views }}</dd></div>
+      </dl>
+    </section>
+    <section class="card card-accent">
+      <h2>{% trans "Posting tips" %}</h2>
+      <ul class="tips">
+        <li>{% trans "Search before starting a new topic." %}</li>
+        <li>{% trans "Add context, examples and what you already tried." %}</li>
+        <li>{% trans "Keep titles short and specific." %}</li>
+      </ul>
+    </section>
+  </aside>
+</div>
+{% endblock %}

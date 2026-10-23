@@ -1,0 +1,49 @@
+# ---- Build stage -----------------------------------------------------------
+FROM python:3.12-slim AS build
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PIP_NO_CACHE_DIR=1
+
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+# Compile the translation catalogs (.po -> .mo) without GNU gettext.
+RUN python tools/build_locales.py
+
+# ---- Runtime stage ---------------------------------------------------------
+FROM python:3.12-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1
+
+WORKDIR /app
+
+COPY --from=build /usr/local/lib/python3.12/site-packages /usr/local/lib/python3.12/site-packages
+COPY --from=build /usr/local/bin/gunicorn /usr/local/bin/gunicorn
+COPY --from=build /app /app
+
+RUN addgroup --system app && adduser --system --ingroup app app \
+    && mkdir -p /app/data /app/staticfiles \
+    && chmod +x /app/entrypoint.sh \
+    && chown -R app:app /app
+
+USER app
+
+EXPOSE 8000
+HEALTHCHECK --interval=30s --timeout=5s --start-period=20s --retries=3 \
+  CMD python -c "import urllib.request;urllib.request.urlopen('http://127.0.0.1:8000/healthz', timeout=4)"
+
+ENTRYPOINT ["sh", "/app/entrypoint.sh"]
+# Workers/threads can be tuned with GUNICORN_WORKERS / GUNICORN_THREADS.
+CMD gunicorn config.wsgi:application \
+    --bind 0.0.0.0:8000 \
+    --workers ${GUNICORN_WORKERS:-3} \
+    --threads ${GUNICORN_THREADS:-4} \
+    --timeout 60 \
+    --forwarded-allow-ips "*" \
+    --access-logfile - \
+    --error-logfile -

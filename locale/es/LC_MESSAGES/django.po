@@ -1,0 +1,714 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenForum MVP\n"
+"Report-Msgid-Bugs-To: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "3–30 characters: letters, numbers and underscore."
+msgstr "3–30 caracteres: letras, números y guion bajo."
+
+msgid "A better conversation starts with a real account."
+msgstr "Una mejor conversación empieza con una cuenta real."
+
+msgid "A clear title and a little context go a long way."
+msgstr "Un título claro y algo de contexto ayudan mucho."
+
+msgid "A clear, specific question or title"
+msgstr "Una pregunta o un título claro y concreto"
+
+msgid "A global space for questions, projects and honest feedback. Open to everyone — no invitation needed."
+msgstr "Un espacio global para preguntas, proyectos y opiniones honestas. Abierto a todos, sin invitación."
+
+msgid "A working contact address and, where required, a data protection officer."
+msgstr "Una dirección de contacto válida y, cuando corresponda, un delegado de protección de datos."
+
+msgid "About"
+msgstr "Acerca de"
+
+msgid "About this topic"
+msgstr "Acerca de este tema"
+
+msgid "Access denied"
+msgstr "Acceso denegado"
+
+msgid "Activate your %(site)s account"
+msgstr "Activa tu cuenta de %(site)s"
+
+msgid "Add context, examples and what you already tried."
+msgstr "Añade contexto, ejemplos y lo que ya has probado."
+
+msgid "Add context, what you tried, and what you need."
+msgstr "Añade contexto, qué has probado y qué necesitas."
+
+msgid "All"
+msgstr "Todos"
+
+msgid "Already have an account?"
+msgstr "¿Ya tienes una cuenta?"
+
+msgid "An account with this email already exists."
+msgstr "Ya existe una cuenta con este correo."
+
+msgid "Ask, share, and build together."
+msgstr "Pregunta, comparte y construye en conjunto."
+
+msgid "At least 10 characters. Avoid common or numeric-only passwords."
+msgstr "Al menos 10 caracteres. Evita contraseñas comunes o solo numéricas."
+
+msgid "Back to discussions"
+msgstr "Volver a las discusiones"
+
+msgid "Back to sign in"
+msgstr "Volver al inicio de sesión"
+
+msgid "Be kind. Critique ideas, not people."
+msgstr "Sé amable. Critica ideas, no personas."
+
+msgid "Be specific and kind."
+msgstr "Sé concreto y amable."
+
+msgid "Be the first to start a conversation here."
+msgstr "Sé la primera persona en iniciar una conversación aquí."
+
+msgid "Before a public launch"
+msgstr "Antes de publicar"
+
+msgid "Before you post"
+msgstr "Antes de publicar"
+
+msgid "Breadcrumb"
+msgstr "Ruta de navegación"
+
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgid "Categories"
+msgstr "Categorías"
+
+msgid "Category"
+msgstr "Categoría"
+
+msgid "Check your inbox"
+msgstr "Revisa tu bandeja de entrada"
+
+msgid "Choose a category"
+msgstr "Elige una categoría"
+
+msgid "Community"
+msgstr "Comunidad"
+
+msgid "Community at a glance"
+msgstr "La comunidad de un vistazo"
+
+msgid "Community guidelines"
+msgstr "Normas de la comunidad"
+
+msgid "Confirm email"
+msgstr "Confirmar correo"
+
+msgid "Confirm password"
+msgstr "Confirmar contraseña"
+
+msgid "Confirm your email"
+msgstr "Confirma tu correo"
+
+msgid "Confirm your email address before posting."
+msgstr "Confirma tu correo antes de publicar."
+
+msgid "Confirm your email first"
+msgstr "Confirma tu correo primero"
+
+msgid "Confirmation links can only be used once. Request a fresh one and try again."
+msgstr "Los enlaces de confirmación solo se pueden usar una vez. Solicita uno nuevo e inténtalo de nuevo."
+
+msgid "Contact"
+msgstr "Contacto"
+
+msgid "Contact us about these documents at"
+msgstr "Escríbenos sobre estos documentos en"
+
+msgid "Copyright / DMCA agent and takedown workflow."
+msgstr "Agente de derechos de autor / DMCA y proceso de retirada."
+
+msgid "Create account"
+msgstr "Crear cuenta"
+
+msgid "Create an account"
+msgstr "Crear una cuenta"
+
+msgid "Create your account"
+msgstr "Crea tu cuenta"
+
+msgid "Data retention periods, sub-processors and international transfer mechanism."
+msgstr "Plazos de conservación, subencargados y mecanismo de transferencia internacional."
+
+msgid "Details (optional)"
+msgstr "Detalles (opcional)"
+
+msgid "Development mode"
+msgstr "Modo de desarrollo"
+
+msgid "Discussions"
+msgstr "Discusiones"
+
+msgid "Do not share passwords, private data or other people's content."
+msgstr "No compartas contraseñas, datos privados ni contenido de otras personas."
+
+msgid "Effective"
+msgstr "Vigente"
+
+msgid "Effective date"
+msgstr "Fecha de entrada en vigor"
+
+msgid "Email"
+msgstr "Correo electrónico"
+
+msgid "Email confirmed"
+msgstr "Correo confirmado"
+
+msgid "Email confirmed. You can sign in now."
+msgstr "Correo confirmado. Ya puedes iniciar sesión."
+
+msgid "Email delivery is not configured, so here is the link:"
+msgstr "El envío de correo no está configurado, así que aquí tienes el enlace:"
+
+msgid "Enter the email address you registered with. We will send a fresh single-use link."
+msgstr "Introduce el correo con el que te registraste. Te enviaremos un enlace nuevo de un solo uso."
+
+msgid "Fresh questions, answers and works in progress."
+msgstr "Preguntas nuevas, respuestas y trabajos en curso."
+
+msgid "Go to sign in"
+msgstr "Ir al inicio de sesión"
+
+msgid "Got it"
+msgstr "Entendido"
+
+msgid "Guidelines"
+msgstr "Normas"
+
+msgid "Harassment or hate"
+msgstr "Acoso u odio"
+
+msgid "Hi %(username)s,"
+msgstr "Hola, %(username)s:"
+
+msgid "Hidden"
+msgstr "Oculto"
+
+msgid "How we treat each other here, and what happens when a post crosses the line."
+msgstr "Cómo nos tratamos aquí y qué pasa cuando una publicación cruza la línea."
+
+msgid "Human verification failed. Please try again."
+msgstr "La verificación humana ha fallado. Inténtalo de nuevo."
+
+msgid "I agree to the Terms of Service and Privacy Policy."
+msgstr "Acepto los Términos del Servicio y la Política de Privacidad."
+
+msgid "If an inactive account exists for that address, a new confirmation email is on its way."
+msgstr "Si existe una cuenta inactiva con esa dirección, ya se está enviando un nuevo correo de confirmación."
+
+msgid "If you did not create this account, you can ignore this email."
+msgstr "Si no creaste esta cuenta, puedes ignorar este correo."
+
+msgid "It may have been moved, deleted, or the link may be incomplete."
+msgstr "Puede que se haya movido, eliminado o que el enlace esté incompleto."
+
+msgid "It takes less than a minute."
+msgstr "Se tarda menos de un minuto."
+
+msgid "Join"
+msgstr "Unirse"
+
+msgid "Join the community"
+msgstr "Únete a la comunidad"
+
+msgid "Join the conversation"
+msgstr "Únete a la conversación"
+
+msgid "Joined"
+msgstr "Se unió en"
+
+msgid "Keep titles short and specific."
+msgstr "Mantén los títulos breves y concretos."
+
+msgid "Language"
+msgstr "Idioma"
+
+msgid "Latest"
+msgstr "Recientes"
+
+msgid "Latest discussions"
+msgstr "Últimas discusiones"
+
+msgid "Learn more"
+msgstr "Más información"
+
+msgid "Legal"
+msgstr "Legal"
+
+msgid "Legal documents"
+msgstr "Documentos legales"
+
+msgid "Legal entity name, registered address and jurisdiction."
+msgstr "Nombre de la entidad, domicilio social y jurisdicción."
+
+msgid "Legal overview"
+msgstr "Resumen legal"
+
+msgid "Locked"
+msgstr "Bloqueado"
+
+msgid "Minimum age and rules for younger users."
+msgstr "Edad mínima y normas para usuarios menores."
+
+msgid "Moderate"
+msgstr "Moderar"
+
+msgid "Moderation"
+msgstr "Moderación"
+
+msgid "Moderator"
+msgstr "Moderador"
+
+msgid "New here?"
+msgstr "¿Primera vez aquí?"
+
+msgid "New topic"
+msgstr "Nuevo tema"
+
+msgid "Next"
+msgstr "Siguiente"
+
+msgid "No advertising trackers"
+msgstr "Sin rastreadores publicitarios"
+
+msgid "No discussions yet"
+msgstr "Aún no hay discusiones"
+
+msgid "No replies yet."
+msgstr "Aún no hay respuestas."
+
+msgid "No replies yet. Start the conversation."
+msgstr "Aún no hay respuestas. Inicia la conversación."
+
+msgid "No topics yet."
+msgstr "Aún no hay temas."
+
+msgid "Not activated yet?"
+msgstr "¿Aún no lo has activado?"
+
+msgid "Nothing matched that search. Try a shorter phrase."
+msgstr "No encontramos coincidencias. Prueba con una frase más corta."
+
+msgid "Nothing yet? Check your spam folder, or resend after a minute."
+msgstr "¿No lo recibes? Revisa la carpeta de spam o vuelve a enviarlo en un minuto."
+
+msgid "Off-topic / duplicate"
+msgstr "Fuera de tema / duplicado"
+
+msgid "One-time email confirmation"
+msgstr "Confirmación por correo de un solo uso"
+
+msgid "Open MVP test build. Features and policies may change."
+msgstr "Versión de prueba MVP abierta. Las funciones y políticas pueden cambiar."
+
+msgid "Open in admin"
+msgstr "Abrir en el panel de administración"
+
+msgid "Original poster"
+msgstr "Autor del tema"
+
+msgid "Other"
+msgstr "Otro"
+
+msgid "Page %(number)s of %(total)s"
+msgstr "Página %(number)s de %(total)s"
+
+msgid "Page not found"
+msgstr "Página no encontrada"
+
+msgid "Pagination"
+msgstr "Paginación"
+
+msgid "Password"
+msgstr "Contraseña"
+
+msgid "Pick the closest category — moderators can move it later."
+msgstr "Elige la categoría más cercana; los moderadores pueden moverla después."
+
+msgid "Pick up where you left off."
+msgstr "Retoma donde lo dejaste."
+
+msgid "Pinned"
+msgstr "Fijado"
+
+msgid "Placeholder document"
+msgstr "Documento de ejemplo"
+
+msgid "Plain text. Line breaks are preserved."
+msgstr "Texto sin formato. Se conservan los saltos de línea."
+
+msgid "Please add a little more detail."
+msgstr "Añade un poco más de detalle."
+
+msgid "Please use a permanent email address."
+msgstr "Usa una dirección de correo permanente."
+
+msgid "Please write a reply."
+msgstr "Escribe una respuesta."
+
+msgid "Please write a slightly longer title."
+msgstr "Escribe un título un poco más largo."
+
+msgid "Popular"
+msgstr "Populares"
+
+msgid "Post"
+msgstr "Publicación"
+
+msgid "Post in English, 中文, 日本語 or Español"
+msgstr "Publica en English, 中文, 日本語 o Español"
+
+msgid "Post reply"
+msgstr "Publicar respuesta"
+
+msgid "Posting tips"
+msgstr "Consejos para publicar"
+
+msgid "Previous"
+msgstr "Anterior"
+
+msgid "Primary"
+msgstr "Navegación principal"
+
+msgid "Privacy Policy"
+msgstr "Política de Privacidad"
+
+msgid "Protected by Cloudflare Turnstile."
+msgstr "Protegido por Cloudflare Turnstile."
+
+msgid "Protected by reCAPTCHA."
+msgstr "Protegido por reCAPTCHA."
+
+msgid "Publish topic"
+msgstr "Publicar tema"
+
+msgid "Questions"
+msgstr "Preguntas"
+
+msgid "Rate limits"
+msgstr "Límites de frecuencia"
+
+msgid "Read the guidelines"
+msgstr "Leer las normas"
+
+msgid "Read the policy"
+msgstr "Leer la política"
+
+msgid "Read the short guidelines, then introduce yourself in General."
+msgstr "Lee las normas breves y preséntate en Charla general."
+
+msgid "Read the terms"
+msgstr "Leer los términos"
+
+msgid "Reason"
+msgstr "Motivo"
+
+msgid "Recent replies"
+msgstr "Respuestas recientes"
+
+msgid "Recent topics"
+msgstr "Temas recientes"
+
+msgid "Registration is open worldwide. We ask for an email address so we can confirm you are a person and keep spammers out."
+msgstr "El registro está abierto en todo el mundo. Pedimos un correo para confirmar que eres una persona y frenar el spam."
+
+msgid "Registration is open. Email confirmation is required before posting, and rate limits keep the test environment usable."
+msgstr "Registro abierto. Hay que confirmar el correo antes de publicar, y los límites de frecuencia mantienen usable el entorno de prueba."
+
+msgid "Replies"
+msgstr "Respuestas"
+
+msgid "Reply"
+msgstr "Respuesta"
+
+msgid "Reply in"
+msgstr "Respuesta en"
+
+msgid "Reply posted."
+msgstr "Respuesta publicada."
+
+msgid "Report"
+msgstr "Reportar"
+
+msgid "Report content"
+msgstr "Reportar contenido"
+
+msgid "Report spam, don't feed it."
+msgstr "Reporta el spam, no lo alimentes."
+
+msgid "Reports are private. Moderators will review the content and take action if it breaks the guidelines."
+msgstr "Los reportes son privados. Los moderadores revisarán el contenido y actuarán si incumple las normas."
+
+msgid "Request received"
+msgstr "Solicitud recibida"
+
+msgid "Resend activation email"
+msgstr "Reenviar correo de activación"
+
+msgid "Resend confirmation"
+msgstr "Reenviar confirmación"
+
+msgid "Resend confirmation email"
+msgstr "Reenviar correo de confirmación"
+
+msgid "Resend email"
+msgstr "Reenviar correo"
+
+msgid "Resend the confirmation email"
+msgstr "Reenviar el correo de confirmación"
+
+msgid "Search before posting."
+msgstr "Busca antes de publicar."
+
+msgid "Search before starting a new topic."
+msgstr "Busca antes de abrir un tema nuevo."
+
+msgid "Search for an existing thread first."
+msgstr "Busca primero si ya existe un hilo."
+
+msgid "Search results"
+msgstr "Resultados de búsqueda"
+
+msgid "Search topics"
+msgstr "Buscar temas"
+
+msgid "See what is new"
+msgstr "Ver novedades"
+
+msgid "Send a new link"
+msgstr "Enviar un enlace nuevo"
+
+msgid "Send confirmation link"
+msgstr "Enviar enlace de confirmación"
+
+msgid "Server error"
+msgstr "Error del servidor"
+
+msgid "Sign in"
+msgstr "Iniciar sesión"
+
+msgid "Sign in to reply, or create a free account."
+msgstr "Inicia sesión para responder o crea una cuenta gratuita."
+
+msgid "Sign in with your username or the email address you registered with."
+msgstr "Inicia sesión con tu nombre de usuario o el correo con el que te registraste."
+
+msgid "Sign out"
+msgstr "Cerrar sesión"
+
+msgid "Skip to content"
+msgstr "Saltar al contenido"
+
+msgid "Slow down for a moment"
+msgstr "Ve más despacio"
+
+msgid "Something went wrong on our side"
+msgstr "Algo salió mal por nuestra parte"
+
+msgid "Something went wrong. Please reload and try again."
+msgstr "Algo salió mal. Recarga la página e inténtalo de nuevo."
+
+msgid "Sort"
+msgstr "Ordenar"
+
+msgid "Spam or advertising"
+msgstr "Spam o publicidad"
+
+msgid "Start a discussion"
+msgstr "Iniciar una discusión"
+
+msgid "Started"
+msgstr "Iniciado"
+
+msgid "Submit report"
+msgstr "Enviar reporte"
+
+msgid "Terms of Service"
+msgstr "Términos del Servicio"
+
+msgid "Terms, privacy and community rules"
+msgstr "Términos, privacidad y normas de la comunidad"
+
+msgid "Thanks — our moderators will review this."
+msgstr "Gracias, nuestros moderadores lo revisarán."
+
+msgid "That username is already taken."
+msgstr "Ese nombre de usuario ya está en uso."
+
+msgid "That username is reserved."
+msgstr "Ese nombre de usuario está reservado."
+
+msgid "That was too quick. Please take a moment and submit again."
+msgstr "Fue demasiado rápido. Espera un momento y vuelve a enviarlo."
+
+msgid "The agreement between you and this community: accounts, content, acceptable use and liability."
+msgstr "El acuerdo entre tú y esta comunidad: cuentas, contenido, uso aceptable y responsabilidad."
+
+msgid "The error has been logged. Please try again in a moment."
+msgstr "El error se ha registrado. Inténtalo de nuevo en un momento."
+
+msgid "The link expires in %(hours)s hours and can be used once."
+msgstr "El enlace caduca en %(hours)s horas y solo se puede usar una vez."
+
+msgid "The link is single-use and expires automatically."
+msgstr "El enlace es de un solo uso y caduca automáticamente."
+
+msgid "The short version: be a real person, be decent to others, and tell us if something breaks."
+msgstr "En resumen: sé una persona real, trata bien a los demás y avísanos si algo falla."
+
+msgid "The two passwords do not match."
+msgstr "Las contraseñas no coinciden."
+
+msgid "These documents are placeholders for an MVP test. Replace the bracketed details and have counsel review:"
+msgstr "Estos documentos son marcadores de posición para una prueba MVP. Sustituye los datos entre corchetes y pide revisión legal:"
+
+msgid "This is an MVP"
+msgstr "Esto es un MVP"
+
+msgid "This link expires in %(hours)s hours and can be used once."
+msgstr "Este enlace caduca en %(hours)s horas y solo se puede usar una vez."
+
+msgid "This link is invalid or expired"
+msgstr "Este enlace no es válido o ha caducado"
+
+msgid "This page does not exist"
+msgstr "Esta página no existe"
+
+msgid "This test build allows a limited number of new topics per hour and per day. Limits reset automatically."
+msgstr "Esta versión de prueba limita el número de temas nuevos por hora y por día. Los límites se restablecen automáticamente."
+
+msgid "This text is a starting point, not legal advice. Have a qualified lawyer review and adapt it — including the entity name, jurisdiction, retention periods and contact details — before a public launch."
+msgstr "Este texto es un punto de partida, no asesoramiento jurídico. Antes de publicar, pide a un abogado cualificado que lo revise y adapte, incluidos el nombre de la entidad, la jurisdicción, los plazos de conservación y los datos de contacto."
+
+msgid "This topic is locked."
+msgstr "Este tema está bloqueado."
+
+msgid "This topic is locked. New replies are disabled."
+msgstr "Este tema está bloqueado. No se pueden añadir respuestas."
+
+msgid "This will activate the account for %(email)s."
+msgstr "Esto activará la cuenta de %(email)s."
+
+msgid "Title"
+msgstr "Título"
+
+msgid "Too many requests"
+msgstr "Demasiadas solicitudes"
+
+msgid "Topic"
+msgstr "Tema"
+
+msgid "Topics"
+msgstr "Temas"
+
+msgid "Try again in %(retry_after)s seconds."
+msgstr "Inténtalo de nuevo en %(retry_after)s segundos."
+
+msgid "Unanswered"
+msgstr "Sin respuesta"
+
+msgid "Use 3–30 characters: letters, numbers and underscore only."
+msgstr "Usa de 3 a 30 caracteres: solo letras, números y guion bajo."
+
+msgid "Username"
+msgstr "Nombre de usuario"
+
+msgid "Username or email"
+msgstr "Nombre de usuario o correo"
+
+msgid "Verified"
+msgstr "Verificado"
+
+msgid "Version"
+msgstr "Versión"
+
+msgid "Views"
+msgstr "Vistas"
+
+msgid "We send a one-time activation link. Use a permanent address."
+msgstr "Enviaremos un enlace de activación de un solo uso. Usa una dirección permanente."
+
+msgid "We sent a confirmation link to %(email)s."
+msgstr "Hemos enviado un enlace de confirmación a %(email)s."
+
+msgid "We use essential cookies to keep you signed in and remember your language."
+msgstr "Usamos cookies esenciales para mantener tu sesión y recordar tu idioma."
+
+msgid "We will email you a confirmation link. Your account stays inactive until you confirm."
+msgstr "Te enviaremos un enlace de confirmación. La cuenta permanece inactiva hasta que confirmes."
+
+msgid "Welcome back"
+msgstr "Hola de nuevo"
+
+msgid "Welcome back."
+msgstr "Hola de nuevo."
+
+msgid "Welcome to %(site)s. Confirm your email address to finish creating your account:"
+msgstr "Te damos la bienvenida a %(site)s. Confirma tu correo para terminar de crear la cuenta:"
+
+msgid "What we collect, why we collect it, how long we keep it, and the rights you have over it."
+msgstr "Qué recopilamos, por qué, durante cuánto tiempo y qué derechos tienes."
+
+msgid "Write a helpful reply…"
+msgstr "Escribe una respuesta útil…"
+
+msgid "Write in the language you are most comfortable with."
+msgstr "Escribe en el idioma con el que te sientas más cómodo."
+
+msgid "You cannot access this page"
+msgstr "No puedes acceder a esta página"
+
+msgid "You have been signed out."
+msgstr "Has cerrado sesión."
+
+msgid "You have made too many requests. This limit protects the community from spam and abuse."
+msgstr "Has hecho demasiadas solicitudes. Este límite protege a la comunidad del spam y el abuso."
+
+msgid "You must accept the Terms and Privacy Policy."
+msgstr "Debes aceptar los Términos y la Política de Privacidad."
+
+msgid "Your account is active, but we still need to confirm your email address before you can post."
+msgstr "Tu cuenta está activa, pero aún debemos confirmar tu correo antes de que puedas publicar."
+
+msgid "Your account is active. You can sign in and start posting."
+msgstr "Tu cuenta está activa. Puedes iniciar sesión y empezar a publicar."
+
+msgid "Your account may not have permission, or the security check on this request failed."
+msgstr "Tu cuenta puede no tener permiso, o la comprobación de seguridad de esta solicitud ha fallado."
+
+msgid "Your topic is live."
+msgstr "Tu tema ya está publicado."
+
+msgid "ago"
+msgstr "atrás"
+
+msgid "members"
+msgstr "miembros"
+
+msgid "replies"
+msgstr "respuestas"
+
+msgid "topics"
+msgstr "temas"
+
+msgid "views"
+msgstr "vistas"
+
+msgid "— %(site)s"
+msgstr "— %(site)s"

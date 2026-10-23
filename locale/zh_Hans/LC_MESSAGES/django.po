@@ -1,0 +1,714 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenForum MVP\n"
+"Report-Msgid-Bugs-To: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_Hans\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "3–30 characters: letters, numbers and underscore."
+msgstr "3–30 个字符：仅限字母、数字和下划线。"
+
+msgid "A better conversation starts with a real account."
+msgstr "更好的交流，从一个真实的账号开始。"
+
+msgid "A clear title and a little context go a long way."
+msgstr "清晰的标题和一点背景说明，能让讨论顺利很多。"
+
+msgid "A clear, specific question or title"
+msgstr "清晰、具体的问题或标题"
+
+msgid "A global space for questions, projects and honest feedback. Open to everyone — no invitation needed."
+msgstr "一个面向全球的空间，用来提问、分享项目和获得真诚反馈。无需邀请，人人可加入。"
+
+msgid "A working contact address and, where required, a data protection officer."
+msgstr "可用的联系地址，以及在适用情况下的数据保护负责人。"
+
+msgid "About"
+msgstr "关于"
+
+msgid "About this topic"
+msgstr "关于这个话题"
+
+msgid "Access denied"
+msgstr "访问被拒绝"
+
+msgid "Activate your %(site)s account"
+msgstr "激活你的 %(site)s 账号"
+
+msgid "Add context, examples and what you already tried."
+msgstr "补充背景、示例，以及你已经尝试过的方法。"
+
+msgid "Add context, what you tried, and what you need."
+msgstr "补充背景、你尝试过什么，以及你需要什么帮助。"
+
+msgid "All"
+msgstr "全部"
+
+msgid "Already have an account?"
+msgstr "已经有账号了？"
+
+msgid "An account with this email already exists."
+msgstr "该邮箱已注册账号。"
+
+msgid "Ask, share, and build together."
+msgstr "提问、分享，一起构建。"
+
+msgid "At least 10 characters. Avoid common or numeric-only passwords."
+msgstr "至少 10 个字符。避免常见密码或纯数字密码。"
+
+msgid "Back to discussions"
+msgstr "返回讨论区"
+
+msgid "Back to sign in"
+msgstr "返回登录"
+
+msgid "Be kind. Critique ideas, not people."
+msgstr "保持友善。批评观点，而不是人身攻击。"
+
+msgid "Be specific and kind."
+msgstr "具体一点，也友善一点。"
+
+msgid "Be the first to start a conversation here."
+msgstr "成为这里第一个开启讨论的人。"
+
+msgid "Before a public launch"
+msgstr "正式上线前"
+
+msgid "Before you post"
+msgstr "发帖前"
+
+msgid "Breadcrumb"
+msgstr "面包屑导航"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "Categories"
+msgstr "分类"
+
+msgid "Category"
+msgstr "分类"
+
+msgid "Check your inbox"
+msgstr "查看你的邮箱"
+
+msgid "Choose a category"
+msgstr "选择一个分类"
+
+msgid "Community"
+msgstr "社区"
+
+msgid "Community at a glance"
+msgstr "社区概览"
+
+msgid "Community guidelines"
+msgstr "社区准则"
+
+msgid "Confirm email"
+msgstr "确认邮箱"
+
+msgid "Confirm password"
+msgstr "确认密码"
+
+msgid "Confirm your email"
+msgstr "确认你的邮箱"
+
+msgid "Confirm your email address before posting."
+msgstr "发帖前请先确认邮箱地址。"
+
+msgid "Confirm your email first"
+msgstr "请先确认邮箱"
+
+msgid "Confirmation links can only be used once. Request a fresh one and try again."
+msgstr "确认链接只能使用一次。请重新获取后再试。"
+
+msgid "Contact"
+msgstr "联系"
+
+msgid "Contact us about these documents at"
+msgstr "如对这些文件有疑问，请联系"
+
+msgid "Copyright / DMCA agent and takedown workflow."
+msgstr "版权 / DMCA 代理与下架流程。"
+
+msgid "Create account"
+msgstr "创建账号"
+
+msgid "Create an account"
+msgstr "创建账号"
+
+msgid "Create your account"
+msgstr "创建你的账号"
+
+msgid "Data retention periods, sub-processors and international transfer mechanism."
+msgstr "数据保留期限、子处理者与跨境传输机制。"
+
+msgid "Details (optional)"
+msgstr "详情（可选）"
+
+msgid "Development mode"
+msgstr "开发模式"
+
+msgid "Discussions"
+msgstr "讨论"
+
+msgid "Do not share passwords, private data or other people's content."
+msgstr "不要分享密码、私人数据或他人的内容。"
+
+msgid "Effective"
+msgstr "生效于"
+
+msgid "Effective date"
+msgstr "生效日期"
+
+msgid "Email"
+msgstr "邮箱"
+
+msgid "Email confirmed"
+msgstr "邮箱已确认"
+
+msgid "Email confirmed. You can sign in now."
+msgstr "邮箱已确认。现在可以登录了。"
+
+msgid "Email delivery is not configured, so here is the link:"
+msgstr "尚未配置邮件发送，以下是确认链接："
+
+msgid "Enter the email address you registered with. We will send a fresh single-use link."
+msgstr "输入你注册时使用的邮箱，我们会发送一封新的单次链接。"
+
+msgid "Fresh questions, answers and works in progress."
+msgstr "新鲜的问题、回答，以及正在进行的作品。"
+
+msgid "Go to sign in"
+msgstr "去登录"
+
+msgid "Got it"
+msgstr "知道了"
+
+msgid "Guidelines"
+msgstr "社区准则"
+
+msgid "Harassment or hate"
+msgstr "骚扰或仇恨"
+
+msgid "Hi %(username)s,"
+msgstr "你好，%(username)s："
+
+msgid "Hidden"
+msgstr "已隐藏"
+
+msgid "How we treat each other here, and what happens when a post crosses the line."
+msgstr "我们如何彼此相待，以及越界后会怎样处理。"
+
+msgid "Human verification failed. Please try again."
+msgstr "人机验证未通过，请重试。"
+
+msgid "I agree to the Terms of Service and Privacy Policy."
+msgstr "我同意《服务条款》和《隐私政策》。"
+
+msgid "If an inactive account exists for that address, a new confirmation email is on its way."
+msgstr "如果该地址存在未激活账号，新的确认邮件正在发送中。"
+
+msgid "If you did not create this account, you can ignore this email."
+msgstr "如果这不是你注册的账号，可以忽略这封邮件。"
+
+msgid "It may have been moved, deleted, or the link may be incomplete."
+msgstr "它可能已被移动、删除，或者链接不完整。"
+
+msgid "It takes less than a minute."
+msgstr "不到一分钟即可完成。"
+
+msgid "Join"
+msgstr "加入"
+
+msgid "Join the community"
+msgstr "加入社区"
+
+msgid "Join the conversation"
+msgstr "参与讨论"
+
+msgid "Joined"
+msgstr "加入于"
+
+msgid "Keep titles short and specific."
+msgstr "标题尽量简短、具体。"
+
+msgid "Language"
+msgstr "语言"
+
+msgid "Latest"
+msgstr "最新"
+
+msgid "Latest discussions"
+msgstr "最新讨论"
+
+msgid "Learn more"
+msgstr "了解更多"
+
+msgid "Legal"
+msgstr "法律"
+
+msgid "Legal documents"
+msgstr "法律文件"
+
+msgid "Legal entity name, registered address and jurisdiction."
+msgstr "法律实体名称、注册地址和管辖地。"
+
+msgid "Legal overview"
+msgstr "法律总览"
+
+msgid "Locked"
+msgstr "已锁定"
+
+msgid "Minimum age and rules for younger users."
+msgstr "最低年龄要求及未成年用户规则。"
+
+msgid "Moderate"
+msgstr "管理"
+
+msgid "Moderation"
+msgstr "内容管理"
+
+msgid "Moderator"
+msgstr "版主"
+
+msgid "New here?"
+msgstr "第一次来？"
+
+msgid "New topic"
+msgstr "新话题"
+
+msgid "Next"
+msgstr "下一页"
+
+msgid "No advertising trackers"
+msgstr "无广告追踪"
+
+msgid "No discussions yet"
+msgstr "还没有讨论"
+
+msgid "No replies yet."
+msgstr "还没有回复。"
+
+msgid "No replies yet. Start the conversation."
+msgstr "还没有回复。来开启对话吧。"
+
+msgid "No topics yet."
+msgstr "还没有话题。"
+
+msgid "Not activated yet?"
+msgstr "还没激活？"
+
+msgid "Nothing matched that search. Try a shorter phrase."
+msgstr "没有找到匹配内容，试试更短的关键词。"
+
+msgid "Nothing yet? Check your spam folder, or resend after a minute."
+msgstr "没收到？检查垃圾邮件，或稍后重新发送。"
+
+msgid "Off-topic / duplicate"
+msgstr "离题 / 重复"
+
+msgid "One-time email confirmation"
+msgstr "一次性邮箱确认"
+
+msgid "Open MVP test build. Features and policies may change."
+msgstr "开放的 MVP 测试版，功能与政策可能调整。"
+
+msgid "Open in admin"
+msgstr "在后台打开"
+
+msgid "Original poster"
+msgstr "楼主"
+
+msgid "Other"
+msgstr "其他"
+
+msgid "Page %(number)s of %(total)s"
+msgstr "第 %(number)s 页，共 %(total)s 页"
+
+msgid "Page not found"
+msgstr "页面不存在"
+
+msgid "Pagination"
+msgstr "分页"
+
+msgid "Password"
+msgstr "密码"
+
+msgid "Pick the closest category — moderators can move it later."
+msgstr "选择最接近的分类——版主之后可以移动。"
+
+msgid "Pick up where you left off."
+msgstr "从上次停下的地方继续。"
+
+msgid "Pinned"
+msgstr "置顶"
+
+msgid "Placeholder document"
+msgstr "占位文档"
+
+msgid "Plain text. Line breaks are preserved."
+msgstr "纯文本，换行会保留。"
+
+msgid "Please add a little more detail."
+msgstr "请再补充一些细节。"
+
+msgid "Please use a permanent email address."
+msgstr "请使用长期有效的邮箱地址。"
+
+msgid "Please write a reply."
+msgstr "请写下回复内容。"
+
+msgid "Please write a slightly longer title."
+msgstr "请把标题写得再长一点。"
+
+msgid "Popular"
+msgstr "热门"
+
+msgid "Post"
+msgstr "正文"
+
+msgid "Post in English, 中文, 日本語 or Español"
+msgstr "可使用 English、中文、日本語 或 Español 发帖"
+
+msgid "Post reply"
+msgstr "发表回复"
+
+msgid "Posting tips"
+msgstr "发帖建议"
+
+msgid "Previous"
+msgstr "上一页"
+
+msgid "Primary"
+msgstr "主导航"
+
+msgid "Privacy Policy"
+msgstr "隐私政策"
+
+msgid "Protected by Cloudflare Turnstile."
+msgstr "由 Cloudflare Turnstile 提供保护。"
+
+msgid "Protected by reCAPTCHA."
+msgstr "由 reCAPTCHA 提供保护。"
+
+msgid "Publish topic"
+msgstr "发布话题"
+
+msgid "Questions"
+msgstr "疑问"
+
+msgid "Rate limits"
+msgstr "频率限制"
+
+msgid "Read the guidelines"
+msgstr "阅读社区准则"
+
+msgid "Read the policy"
+msgstr "阅读隐私政策"
+
+msgid "Read the short guidelines, then introduce yourself in General."
+msgstr "先读一遍简短准则，然后去「综合讨论」做个自我介绍。"
+
+msgid "Read the terms"
+msgstr "阅读服务条款"
+
+msgid "Reason"
+msgstr "原因"
+
+msgid "Recent replies"
+msgstr "最近回复"
+
+msgid "Recent topics"
+msgstr "最近话题"
+
+msgid "Registration is open worldwide. We ask for an email address so we can confirm you are a person and keep spammers out."
+msgstr "面向全球开放注册。我们需要邮箱来确认你是真人，并挡住垃圾账号。"
+
+msgid "Registration is open. Email confirmation is required before posting, and rate limits keep the test environment usable."
+msgstr "注册开放。发帖前需完成邮箱确认；频率限制用于保障测试环境可用。"
+
+msgid "Replies"
+msgstr "回复"
+
+msgid "Reply"
+msgstr "回复"
+
+msgid "Reply in"
+msgstr "回复于"
+
+msgid "Reply posted."
+msgstr "回复已发布。"
+
+msgid "Report"
+msgstr "举报"
+
+msgid "Report content"
+msgstr "举报内容"
+
+msgid "Report spam, don't feed it."
+msgstr "举报垃圾信息，不要回应它。"
+
+msgid "Reports are private. Moderators will review the content and take action if it breaks the guidelines."
+msgstr "举报内容仅版主可见。若违反准则，版主会审核并处理。"
+
+msgid "Request received"
+msgstr "请求已收到"
+
+msgid "Resend activation email"
+msgstr "重新发送激活邮件"
+
+msgid "Resend confirmation"
+msgstr "重新发送确认邮件"
+
+msgid "Resend confirmation email"
+msgstr "重新发送确认邮件"
+
+msgid "Resend email"
+msgstr "重新发送邮件"
+
+msgid "Resend the confirmation email"
+msgstr "重新发送确认邮件"
+
+msgid "Search before posting."
+msgstr "发帖前先搜索。"
+
+msgid "Search before starting a new topic."
+msgstr "开新话题前先搜索。"
+
+msgid "Search for an existing thread first."
+msgstr "先搜索是否已有相关帖子。"
+
+msgid "Search results"
+msgstr "搜索结果"
+
+msgid "Search topics"
+msgstr "搜索话题"
+
+msgid "See what is new"
+msgstr "看看有什么新内容"
+
+msgid "Send a new link"
+msgstr "发送新链接"
+
+msgid "Send confirmation link"
+msgstr "发送确认链接"
+
+msgid "Server error"
+msgstr "服务器错误"
+
+msgid "Sign in"
+msgstr "登录"
+
+msgid "Sign in to reply, or create a free account."
+msgstr "登录后回复，或创建一个免费账号。"
+
+msgid "Sign in with your username or the email address you registered with."
+msgstr "使用用户名或注册邮箱登录。"
+
+msgid "Sign out"
+msgstr "退出登录"
+
+msgid "Skip to content"
+msgstr "跳到主要内容"
+
+msgid "Slow down for a moment"
+msgstr "请稍慢一点"
+
+msgid "Something went wrong on our side"
+msgstr "我们这边出了点问题"
+
+msgid "Something went wrong. Please reload and try again."
+msgstr "出了点问题，请刷新页面后重试。"
+
+msgid "Sort"
+msgstr "排序"
+
+msgid "Spam or advertising"
+msgstr "垃圾信息或广告"
+
+msgid "Start a discussion"
+msgstr "发起讨论"
+
+msgid "Started"
+msgstr "发布于"
+
+msgid "Submit report"
+msgstr "提交举报"
+
+msgid "Terms of Service"
+msgstr "服务条款"
+
+msgid "Terms, privacy and community rules"
+msgstr "条款、隐私与社区规则"
+
+msgid "Thanks — our moderators will review this."
+msgstr "谢谢，版主会尽快审核。"
+
+msgid "That username is already taken."
+msgstr "该用户名已被占用。"
+
+msgid "That username is reserved."
+msgstr "该用户名为保留名称。"
+
+msgid "That was too quick. Please take a moment and submit again."
+msgstr "提交得太快了，请稍等片刻再试。"
+
+msgid "The agreement between you and this community: accounts, content, acceptable use and liability."
+msgstr "你与本社区之间的约定：账号、内容、可接受的使用方式和责任。"
+
+msgid "The error has been logged. Please try again in a moment."
+msgstr "错误已记录，请稍后重试。"
+
+msgid "The link expires in %(hours)s hours and can be used once."
+msgstr "该链接将在 %(hours)s 小时后过期，且仅可使用一次。"
+
+msgid "The link is single-use and expires automatically."
+msgstr "该链接仅可使用一次，并会自动过期。"
+
+msgid "The short version: be a real person, be decent to others, and tell us if something breaks."
+msgstr "简单来说：做真实的人，友善待人；发现问题就告诉我们。"
+
+msgid "The two passwords do not match."
+msgstr "两次输入的密码不一致。"
+
+msgid "These documents are placeholders for an MVP test. Replace the bracketed details and have counsel review:"
+msgstr "这些文件只是 MVP 测试用的占位文本。请替换方括号中的信息，并请律师审核："
+
+msgid "This is an MVP"
+msgstr "这是一个 MVP"
+
+msgid "This link expires in %(hours)s hours and can be used once."
+msgstr "该链接将在 %(hours)s 小时后过期，且仅可使用一次。"
+
+msgid "This link is invalid or expired"
+msgstr "该链接无效或已过期"
+
+msgid "This page does not exist"
+msgstr "页面不存在"
+
+msgid "This test build allows a limited number of new topics per hour and per day. Limits reset automatically."
+msgstr "该测试版对每小时、每天的新话题数量有限制，限额会自动重置。"
+
+msgid "This text is a starting point, not legal advice. Have a qualified lawyer review and adapt it — including the entity name, jurisdiction, retention periods and contact details — before a public launch."
+msgstr "这段文字只是起点，不构成法律意见。正式上线前，请让具备资质的律师审核并调整——包括实体名称、管辖地、保留期限和联系方式。"
+
+msgid "This topic is locked."
+msgstr "该话题已锁定。"
+
+msgid "This topic is locked. New replies are disabled."
+msgstr "该话题已锁定，无法新增回复。"
+
+msgid "This will activate the account for %(email)s."
+msgstr "这将激活 %(email)s 的账号。"
+
+msgid "Title"
+msgstr "标题"
+
+msgid "Too many requests"
+msgstr "请求过多"
+
+msgid "Topic"
+msgstr "话题"
+
+msgid "Topics"
+msgstr "话题"
+
+msgid "Try again in %(retry_after)s seconds."
+msgstr "请在 %(retry_after)s 秒后重试。"
+
+msgid "Unanswered"
+msgstr "待解答"
+
+msgid "Use 3–30 characters: letters, numbers and underscore only."
+msgstr "请使用 3–30 个字符：仅限字母、数字和下划线。"
+
+msgid "Username"
+msgstr "用户名"
+
+msgid "Username or email"
+msgstr "用户名或邮箱"
+
+msgid "Verified"
+msgstr "已验证"
+
+msgid "Version"
+msgstr "版本"
+
+msgid "Views"
+msgstr "浏览"
+
+msgid "We send a one-time activation link. Use a permanent address."
+msgstr "我们会发送一次性激活链接，请使用长期有效的邮箱。"
+
+msgid "We sent a confirmation link to %(email)s."
+msgstr "我们已向 %(email)s 发送确认链接。"
+
+msgid "We use essential cookies to keep you signed in and remember your language."
+msgstr "我们使用必要的 Cookie 来保持登录状态并记住你的语言。"
+
+msgid "We will email you a confirmation link. Your account stays inactive until you confirm."
+msgstr "我们会给你发送确认链接。确认前账号处于未激活状态。"
+
+msgid "Welcome back"
+msgstr "欢迎回来"
+
+msgid "Welcome back."
+msgstr "欢迎回来。"
+
+msgid "Welcome to %(site)s. Confirm your email address to finish creating your account:"
+msgstr "欢迎来到 %(site)s。请确认邮箱地址以完成注册："
+
+msgid "What we collect, why we collect it, how long we keep it, and the rights you have over it."
+msgstr "我们收集什么、为什么收集、保留多久，以及你拥有哪些权利。"
+
+msgid "Write a helpful reply…"
+msgstr "写下有帮助的回复…"
+
+msgid "Write in the language you are most comfortable with."
+msgstr "用你最熟悉的语言书写。"
+
+msgid "You cannot access this page"
+msgstr "你无法访问此页面"
+
+msgid "You have been signed out."
+msgstr "你已退出登录。"
+
+msgid "You have made too many requests. This limit protects the community from spam and abuse."
+msgstr "请求次数过多。此限制用于保护社区免受垃圾信息和滥用。"
+
+msgid "You must accept the Terms and Privacy Policy."
+msgstr "你必须同意服务条款和隐私政策。"
+
+msgid "Your account is active, but we still need to confirm your email address before you can post."
+msgstr "你的账号已激活，但发帖前仍需确认邮箱地址。"
+
+msgid "Your account is active. You can sign in and start posting."
+msgstr "你的账号已激活，可以登录并开始发帖。"
+
+msgid "Your account may not have permission, or the security check on this request failed."
+msgstr "你的账号可能没有权限，或本次请求的安全校验未通过。"
+
+msgid "Your topic is live."
+msgstr "你的话题已发布。"
+
+msgid "ago"
+msgstr "前"
+
+msgid "members"
+msgstr "位成员"
+
+msgid "replies"
+msgstr "条回复"
+
+msgid "topics"
+msgstr "个话题"
+
+msgid "views"
+msgstr "次浏览"
+
+msgid "— %(site)s"
+msgstr "— %(site)s"

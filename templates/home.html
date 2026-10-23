@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% if active_category %}{{ active_category.name }} — {% endif %}{{ site_name }}{% endblock %}
+
+{% block content %}
+{% if not active_category and not query %}
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">{% trans "Community" %}</p>
+    <h1>{% trans "Ask, share, and build together." %}</h1>
+    <p class="hero-sub">{% trans "A global space for questions, projects and honest feedback. Open to everyone — no invitation needed." %}</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="{% url 'topic_create' %}">{% trans "Start a discussion" %}</a>
+      <a class="btn btn-secondary" href="{% url 'legal_page' 'guidelines' %}">{% trans "Read the guidelines" %}</a>
+    </div>
+  </div>
+  <div class="hero-panel" aria-hidden="true">
+    <div class="hero-line"><span class="dot"></span><span>{% trans "Be specific and kind." %}</span></div>
+    <div class="hero-line"><span class="dot"></span><span>{% trans "Search before posting." %}</span></div>
+    <div class="hero-line"><span class="dot"></span><span>{% trans "Report spam, don't feed it." %}</span></div>
+  </div>
+</section>
+{% endif %}
+
+<div class="layout">
+  <section class="feed" aria-labelledby="feed-title">
+    <div class="feed-head">
+      <div>
+        <h1 id="feed-title" class="page-title">
+          {% if query %}
+            {% trans "Search results" %}
+          {% elif active_category %}
+            {{ active_category.name }}
+          {% else %}
+            {% trans "Latest discussions" %}
+          {% endif %}
+        </h1>
+        <p class="page-sub">
+          {% if query %}
+            “{{ query }}” · {{ page_obj.paginator.count }} {% trans "topics" %}
+          {% elif active_category %}
+            {{ active_category.description }}
+          {% else %}
+            {% trans "Fresh questions, answers and works in progress." %}
+          {% endif %}
+        </p>
+      </div>
+      <a class="btn btn-primary" href="{% url 'topic_create' %}">{% trans "New topic" %}</a>
+    </div>
+
+    <div class="feed-toolbar">
+      <div class="chip-row" role="navigation" aria-label="{% trans 'Categories' %}">
+        <a class="chip {% if not active_category %}is-active{% endif %}" href="{% url 'home' %}{% if query %}?q={{ query|urlencode }}{% endif %}">{% trans "All" %}</a>
+        {% for category in categories %}
+          <a class="chip {% if active_category.slug == category.slug %}is-active{% endif %}"
+             href="{% url 'home' %}?category={{ category.slug }}{% if query %}&q={{ query|urlencode }}{% endif %}">{{ category.name }}</a>
+        {% endfor %}
+      </div>
+      <div class="sort-tabs" role="navigation" aria-label="{% trans 'Sort' %}">
+        <a class="{% if sort == 'latest' %}is-active{% endif %}" href="?{% if active_category %}category={{ active_category.slug }}&{% endif %}{% if query %}q={{ query|urlencode }}&{% endif %}sort=latest">{% trans "Latest" %}</a>
+        <a class="{% if sort == 'popular' %}is-active{% endif %}" href="?{% if active_category %}category={{ active_category.slug }}&{% endif %}{% if query %}q={{ query|urlencode }}&{% endif %}sort=popular">{% trans "Popular" %}</a>
+        <a class="{% if sort == 'unanswered' %}is-active{% endif %}" href="?{% if active_category %}category={{ active_category.slug }}&{% endif %}{% if query %}q={{ query|urlencode }}&{% endif %}sort=unanswered">{% trans "Unanswered" %}</a>
+      </div>
+    </div>
+
+    <div class="topic-list">
+      {% for topic in topics %}
+        {% include "partials/_topic_row.html" with topic=topic %}
+      {% empty %}
+        <div class="empty-state">
+          <h2>{% trans "No discussions yet" %}</h2>
+          <p>{% if query %}{% trans "Nothing matched that search. Try a shorter phrase." %}{% else %}{% trans "Be the first to start a conversation here." %}{% endif %}</p>
+          <a class="btn btn-primary" href="{% url 'topic_create' %}">{% trans "Start a discussion" %}</a>
+        </div>
+      {% endfor %}
+    </div>
+
+    {% if page_obj.has_other_pages %}
+      <nav class="pagination" aria-label="{% trans 'Pagination' %}">
+        {% if page_obj.has_previous %}
+          <a class="btn btn-secondary btn-sm" href="?page={{ page_obj.previous_page_number }}{% if active_category %}&category={{ active_category.slug }}{% endif %}{% if query %}&q={{ query|urlencode }}{% endif %}&sort={{ sort }}">{% trans "Previous" %}</a>
+        {% endif %}
+        <span>{% blocktrans with number=page_obj.number total=page_obj.paginator.num_pages %}Page {{ number }} of {{ total }}{% endblocktrans %}</span>
+        {% if page_obj.has_next %}
+          <a class="btn btn-secondary btn-sm" href="?page={{ page_obj.next_page_number }}{% if active_category %}&category={{ active_category.slug }}{% endif %}{% if query %}&q={{ query|urlencode }}{% endif %}&sort={{ sort }}">{% trans "Next" %}</a>
+        {% endif %}
+      </nav>
+    {% endif %}
+  </section>
+
+  <aside class="sidebar">
+    <section class="card stat-card">
+      <h2>{% trans "Community at a glance" %}</h2>
+      <div class="stat-grid">
+        <div><strong>{{ stats.members }}</strong><span>{% trans "members" %}</span></div>
+        <div><strong>{{ stats.topics }}</strong><span>{% trans "topics" %}</span></div>
+        <div><strong>{{ stats.replies }}</strong><span>{% trans "replies" %}</span></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>{% trans "Categories" %}</h2>
+      <ul class="category-list">
+        {% for category in categories %}
+          <li>
+            <a href="{% url 'home' %}?category={{ category.slug }}">
+              <span>{{ category.name }}</span>
+              <span class="count">{{ category.topic_count }}</span>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <section class="card card-accent">
+      <h2>{% trans "New here?" %}</h2>
+      <p>{% trans "Read the short guidelines, then introduce yourself in General." %}</p>
+      <a class="text-link" href="{% url 'legal_page' 'guidelines' %}">{% trans "Community guidelines" %} →</a>
+    </section>
+
+    <section class="card">
+      <h2>{% trans "This is an MVP" %}</h2>
+      <p class="muted">{% trans "Registration is open. Email confirmation is required before posting, and rate limits keep the test environment usable." %}</p>
+    </section>
+  </aside>
+</div>
+{% endblock %}

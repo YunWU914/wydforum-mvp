@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Confirm your email" %} — {{ site_name }}{% endblock %}
+
+{% block content %}
+<div class="auth-wrap auth-wrap-single">
+  <section class="card auth-card center-card">
+    {% if confirm %}
+      <div class="status-icon" aria-hidden="true">
+        <svg viewBox="0 0 48 48" width="44" height="44" fill="none">
+          <circle cx="24" cy="24" r="17" stroke="currentColor" stroke-width="2.5"/>
+          <path d="M16 24.5l6 6 11-13" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <h1>{% trans "Confirm your email" %}</h1>
+      <p>{% blocktrans with email=email %}This will activate the account for {{ email }}.{% endblocktrans %}</p>
+      <form method="post" class="inline-form">
+        {% csrf_token %}
+        <button class="btn btn-primary" type="submit">{% trans "Confirm email" %}</button>
+      </form>
+      <p class="fineprint">{% trans "The link is single-use and expires automatically." %}</p>
+    {% elif ok %}
+      <div class="status-icon status-icon-success" aria-hidden="true">
+        <svg viewBox="0 0 48 48" width="44" height="44" fill="none">
+          <circle cx="24" cy="24" r="17" stroke="currentColor" stroke-width="2.5"/>
+          <path d="M16 24.5l6 6 11-13" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <h1>{% trans "Email confirmed" %}</h1>
+      <p>{% trans "Your account is active. You can sign in and start posting." %}</p>
+      <a class="btn btn-primary" href="{% url 'login' %}">{% trans "Sign in" %}</a>
+    {% else %}
+      <div class="status-icon status-icon-danger" aria-hidden="true">
+        <svg viewBox="0 0 48 48" width="44" height="44" fill="none">
+          <circle cx="24" cy="24" r="17" stroke="currentColor" stroke-width="2.5"/>
+          <path d="M24 15v11M24 32v.5" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h1>{% trans "This link is invalid or expired" %}</h1>
+      <p>{% trans "Confirmation links can only be used once. Request a fresh one and try again." %}</p>
+      <div class="stack-actions">
+        <a class="btn btn-primary" href="{% url 'resend_activation' %}">{% trans "Resend confirmation" %}</a>
+        <a class="btn btn-secondary" href="{% url 'home' %}">{% trans "Back to discussions" %}</a>
+      </div>
+    {% endif %}
+  </section>
+</div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Access denied" %} — {{ site_name }}{% endblock %}
+
+{% block content %}
+<div class="auth-wrap auth-wrap-single">
+  <section class="card auth-card center-card">
+    <p class="eyebrow">403</p>
+    <h1>{% trans "You cannot access this page" %}</h1>
+    <p>{% trans "Your account may not have permission, or the security check on this request failed." %}</p>
+    <div class="stack-actions">
+      <a class="btn btn-primary" href="{% url 'home' %}">{% trans "Back to discussions" %}</a>
+      <a class="btn btn-secondary" href="{% url 'login' %}">{% trans "Sign in" %}</a>
+    </div>
+  </section>
+</div>
+{% endblock %}

@@ -1,0 +1,6 @@
+# Normalize line endings: LF everywhere (entrypoint.sh must stay LF for Docker)
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.ico binary
+*.mo binary

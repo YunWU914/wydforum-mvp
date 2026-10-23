@@ -1,0 +1,62 @@
+{% extends "legal/_base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Terms of Service" %} — {{ site_name }}{% endblock %}
+{% block legal_title %}{% trans "Terms of Service" %}{% endblock %}
+
+{% block legal_body %}
+<div class="legal-body">
+  <p>These Terms of Service (“Terms”) govern your access to and use of {{ site_name }} (the “Service”), operated by {{ legal_company }} (“we”, “us”). By creating an account or using the Service, you agree to these Terms. If you do not agree, do not use the Service.</p>
+
+  <h2>1. Eligibility</h2>
+  <p>You must be at least 16 years old, or the minimum digital age of consent in your country, whichever is higher. If you are under 18, you confirm that a parent or guardian permits your use of the Service. The Service is not directed to children.</p>
+
+  <h2>2. Your account</h2>
+  <ul>
+    <li>Provide accurate registration information and keep it current.</li>
+    <li>One person, one account. Do not share credentials or sell access.</li>
+    <li>You are responsible for activity under your account. Tell us promptly if you suspect unauthorised access.</li>
+    <li>We may require email confirmation before allowing posting. Accounts that remain unconfirmed may be removed.</li>
+  </ul>
+
+  <h2>3. Your content</h2>
+  <p>You retain ownership of the content you post. You grant us a non-exclusive, worldwide, royalty-free licence to host, store, reproduce, display and adapt your content solely to operate, moderate and promote the Service. This licence ends when you delete the content, except for backups, legal records and content others have quoted.</p>
+  <p>You represent that you have the rights to post your content and that it does not infringe anyone else’s rights. You are responsible for what you publish.</p>
+
+  <h2>4. Acceptable use</h2>
+  <p>Do not use the Service to:</p>
+  <ul>
+    <li>Break any law, infringe intellectual property, or violate privacy or publicity rights.</li>
+    <li>Harass, threaten, defame, or promote hatred against people or groups.</li>
+    <li>Post sexual content involving minors, non-consensual intimate imagery, or content that sexualises minors.</li>
+    <li>Distribute malware, phishing links, or attempt to gain unauthorised access to systems.</li>
+    <li>Spam, scrape at scale, create bulk accounts, manipulate rankings, or evade rate limits and other safeguards.</li>
+    <li>Impersonate another person, brand, or moderator.</li>
+  </ul>
+  <p>We may remove content, limit features, suspend or terminate accounts that violate these rules or that create risk for other users or for us.</p>
+
+  <h2>5. Moderation</h2>
+  <p>Moderators may hide, move, lock or delete content, and may warn, suspend or ban accounts. Moderation decisions are made at our discretion to protect the community. You can appeal a decision by contacting <a href="mailto:{{ legal_contact_email }}">{{ legal_contact_email }}</a>. False or abusive reports may themselves be moderated.</p>
+
+  <h2>6. Third-party services</h2>
+  <p>The Service uses third-party providers for hosting, email delivery and bot protection (for example Cloudflare Turnstile or Google reCAPTCHA). Your use of those features may be subject to the provider’s own terms and privacy policy. We do not control third-party sites linked from user content.</p>
+
+  <h2>7. Disclaimers</h2>
+  <p>The Service is provided “as is” and “as available”, without warranties of any kind, express or implied, including fitness for a particular purpose, accuracy, and non-infringement. User content is not endorsed by us. This is an MVP test environment: features may change, break, or be removed without notice.</p>
+
+  <h2>8. Limitation of liability</h2>
+  <p>To the maximum extent permitted by law, we are not liable for indirect, incidental, special, consequential or punitive damages, or for lost data, profits or goodwill, arising from your use of the Service. Where liability cannot be excluded, our aggregate liability is limited to the greater of the amount you paid us in the previous twelve months (if any) or the minimum amount required by applicable law.</p>
+
+  <h2>9. Termination</h2>
+  <p>You may stop using the Service at any time. We may suspend or terminate access if you breach these Terms, if required by law, or if continuing to operate the Service for you is no longer practical. Provisions that by their nature should survive termination will do so.</p>
+
+  <h2>10. Changes</h2>
+  <p>We may update these Terms. Material changes will be announced on the Service or by email before they take effect. Continued use after the effective date means you accept the updated Terms.</p>
+
+  <h2>11. Governing law and contact</h2>
+  <p>These Terms are governed by the laws of {{ legal_jurisdiction }}, without regard to conflict-of-law rules. Courts located there have exclusive jurisdiction, except where consumer law gives you a different right.</p>
+  <p>Questions about these Terms: <a href="mailto:{{ legal_contact_email }}">{{ legal_contact_email }}</a><br>
+  {{ legal_company }}<br>
+  <span class="ph">[[REGISTERED ADDRESS — PLACEHOLDER]]</span></p>
+</div>
+{% endblock %}

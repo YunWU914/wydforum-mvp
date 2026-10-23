@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Create an account" %} — {{ site_name }}{% endblock %}
+
+{% block content %}
+<div class="auth-wrap">
+  <section class="auth-intro">
+    <p class="eyebrow">{% trans "Join the community" %}</p>
+    <h1>{% trans "A better conversation starts with a real account." %}</h1>
+    <p>{% trans "Registration is open worldwide. We ask for an email address so we can confirm you are a person and keep spammers out." %}</p>
+    <ul class="check-list">
+      <li>{% trans "One-time email confirmation" %}</li>
+      <li>{% trans "No advertising trackers" %}</li>
+      <li>{% trans "Post in English, 中文, 日本語 or Español" %}</li>
+    </ul>
+  </section>
+
+  <section class="card auth-card">
+    <h2>{% trans "Create your account" %}</h2>
+    <p class="muted">{% trans "It takes less than a minute." %}</p>
+
+    {% if form.non_field_errors %}
+      <div class="form-alert">{% for error in form.non_field_errors %}<p>{{ error }}</p>{% endfor %}</div>
+    {% endif %}
+
+    <form method="post" novalidate>
+      {% csrf_token %}
+      {% include "partials/_field.html" with field=form.username %}
+      {% include "partials/_field.html" with field=form.email %}
+      {% include "partials/_field.html" with field=form.password1 %}
+      {% include "partials/_field.html" with field=form.password2 %}
+
+      <div class="field checkbox{% if form.agree.errors %} has-error{% endif %}">
+        <label for="{{ form.agree.id_for_label }}">
+          {{ form.agree }}
+          <span>{% trans "I agree to the Terms of Service and Privacy Policy." %}</span>
+        </label>
+        <p class="help">
+          <a href="{% url 'legal_page' 'terms' %}" target="_blank" rel="noopener">{% trans "Terms of Service" %}</a>
+          <span aria-hidden="true">·</span>
+          <a href="{% url 'legal_page' 'privacy' %}" target="_blank" rel="noopener">{% trans "Privacy Policy" %}</a>
+        </p>
+        {% for error in form.agree.errors %}<p class="error">{{ error }}</p>{% endfor %}
+      </div>
+
+      {% include "partials/_captcha.html" %}
+      {{ form.hp_field }}{{ form.ts }}
+
+      <button class="btn btn-primary btn-block" type="submit">{% trans "Create account" %}</button>
+    </form>
+
+    <p class="auth-foot">{% trans "Already have an account?" %} <a href="{% url 'login' %}">{% trans "Sign in" %}</a></p>
+    <p class="fineprint">{% trans "We will email you a confirmation link. Your account stays inactive until you confirm." %}</p>
+  </section>
+</div>
+{% endblock %}

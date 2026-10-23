@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Legal" %} — {{ site_name }}{% endblock %}
+
+{% block content %}
+<section class="page-head">
+  <div>
+    <p class="eyebrow">{% trans "Legal" %}</p>
+    <h1 class="page-title">{% trans "Terms, privacy and community rules" %}</h1>
+    <p class="page-sub">{% trans "The short version: be a real person, be decent to others, and tell us if something breaks." %}</p>
+  </div>
+</section>
+
+<div class="legal-cards">
+  <a class="card legal-card" href="{% url 'legal_page' 'terms' %}">
+    <h2>{% trans "Terms of Service" %}</h2>
+    <p>{% trans "The agreement between you and this community: accounts, content, acceptable use and liability." %}</p>
+    <span class="text-link">{% trans "Read the terms" %} →</span>
+  </a>
+  <a class="card legal-card" href="{% url 'legal_page' 'privacy' %}">
+    <h2>{% trans "Privacy Policy" %}</h2>
+    <p>{% trans "What we collect, why we collect it, how long we keep it, and the rights you have over it." %}</p>
+    <span class="text-link">{% trans "Read the policy" %} →</span>
+  </a>
+  <a class="card legal-card" href="{% url 'legal_page' 'guidelines' %}">
+    <h2>{% trans "Community guidelines" %}</h2>
+    <p>{% trans "How we treat each other here, and what happens when a post crosses the line." %}</p>
+    <span class="text-link">{% trans "Read the guidelines" %} →</span>
+  </a>
+</div>
+
+<section class="card legal-note">
+  <h2>{% trans "Before a public launch" %}</h2>
+  <p>{% trans "These documents are placeholders for an MVP test. Replace the bracketed details and have counsel review:" %}</p>
+  <ul class="tips">
+    <li>{% trans "Legal entity name, registered address and jurisdiction." %}</li>
+    <li>{% trans "Minimum age and rules for younger users." %}</li>
+    <li>{% trans "Data retention periods, sub-processors and international transfer mechanism." %}</li>
+    <li>{% trans "Copyright / DMCA agent and takedown workflow." %}</li>
+    <li>{% trans "A working contact address and, where required, a data protection officer." %}</li>
+  </ul>
+  <p class="fineprint">{% trans "Effective date" %}: {{ legal_effective_date }} · {{ legal_company }}</p>
+</section>
+{% endblock %}

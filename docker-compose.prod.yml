@@ -1,0 +1,68 @@
+# Optional production compose: automatic HTTPS via Caddy + hardened Django.
+#
+#   export DOMAIN=forum.example.com
+#   export DJANGO_SECRET_KEY=$(python -c "import secrets;print(secrets.token_urlsafe(50))")
+#   export TURNSTILE_SITE_KEY=... TURNSTILE_SECRET_KEY=...
+#   export EMAIL_HOST=... EMAIL_HOST_USER=... EMAIL_HOST_PASSWORD=...
+#   docker compose -f docker-compose.prod.yml up -d --build
+#
+# DNS for $DOMAIN must point at this machine (ports 80/443 open).
+
+services:
+  web:
+    build: .
+    image: openforum-mvp:latest
+    expose:
+      - "8000"
+    environment:
+      DJANGO_DEBUG: "0"
+      DJANGO_SECRET_KEY: ${DJANGO_SECRET_KEY:?set DJANGO_SECRET_KEY}
+      DJANGO_ALLOWED_HOSTS: ${DOMAIN:?set DOMAIN}
+      DJANGO_CSRF_TRUSTED_ORIGINS: https://${DOMAIN}
+      DJANGO_SECURE_SSL_REDIRECT: "1"
+
+      SITE_NAME: ${SITE_NAME:-OpenForum}
+      SITE_TAGLINE: ${SITE_TAGLINE:-A place to ask, share and build together.}
+      SITE_URL: https://${DOMAIN}
+
+      CAPTCHA_PROVIDER: ${CAPTCHA_PROVIDER:-turnstile}
+      TURNSTILE_SITE_KEY: ${TURNSTILE_SITE_KEY:-}
+      TURNSTILE_SECRET_KEY: ${TURNSTILE_SECRET_KEY:-}
+      RECAPTCHA_SITE_KEY: ${RECAPTCHA_SITE_KEY:-}
+      RECAPTCHA_SECRET_KEY: ${RECAPTCHA_SECRET_KEY:-}
+
+      EMAIL_BACKEND: ${EMAIL_BACKEND:-django.core.mail.backends.smtp.EmailBackend}
+      EMAIL_HOST: ${EMAIL_HOST:-}
+      EMAIL_PORT: ${EMAIL_PORT:-587}
+      EMAIL_HOST_USER: ${EMAIL_HOST_USER:-}
+      EMAIL_HOST_PASSWORD: ${EMAIL_HOST_PASSWORD:-}
+      DEFAULT_FROM_EMAIL: ${DEFAULT_FROM_EMAIL:-OpenForum <no-reply@example.com>}
+
+      TRUST_X_FORWARDED_FOR: "1"
+
+      DJANGO_SUPERUSER_USERNAME: ${DJANGO_SUPERUSER_USERNAME:-}
+      DJANGO_SUPERUSER_EMAIL: ${DJANGO_SUPERUSER_EMAIL:-}
+      DJANGO_SUPERUSER_PASSWORD: ${DJANGO_SUPERUSER_PASSWORD:-}
+    volumes:
+      - forum_data:/app/data
+    restart: unless-stopped
+
+  caddy:
+    image: caddy:2-alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      DOMAIN: ${DOMAIN}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - web
+    restart: unless-stopped
+
+volumes:
+  forum_data:
+  caddy_data:
+  caddy_config:

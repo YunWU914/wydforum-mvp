@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.pyo
+.git/
+.gitignore
+.env
+data/
+staticfiles/
+.preview/
+.devcontainer/
+.github/
+*.sqlite3
+Dockerfile
+docker-compose*.yml
+Caddyfile
+README.md

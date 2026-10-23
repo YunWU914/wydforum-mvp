@@ -1,0 +1,12 @@
+{% load i18n %}
+{% if captcha_provider == 'turnstile' %}
+  <div class="captcha-box">
+    <div class="cf-turnstile" data-sitekey="{{ captcha_site_key }}" data-theme="light"></div>
+    <p class="help">{% trans "Protected by Cloudflare Turnstile." %}</p>
+  </div>
+{% elif captcha_provider == 'recaptcha' %}
+  <div class="captcha-box">
+    <div class="g-recaptcha" data-sitekey="{{ captcha_site_key }}"></div>
+    <p class="help">{% trans "Protected by reCAPTCHA." %}</p>
+  </div>
+{% endif %}

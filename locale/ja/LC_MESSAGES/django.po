@@ -1,0 +1,714 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenForum MVP\n"
+"Report-Msgid-Bugs-To: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "3–30 characters: letters, numbers and underscore."
+msgstr "3〜30文字：半角英数字とアンダースコアのみ。"
+
+msgid "A better conversation starts with a real account."
+msgstr "より良い対話は、本物のアカウントから。"
+
+msgid "A clear title and a little context go a long way."
+msgstr "分かりやすいタイトルと少しの背景説明が、議論をスムーズにします。"
+
+msgid "A clear, specific question or title"
+msgstr "明確で具体的な質問やタイトル"
+
+msgid "A global space for questions, projects and honest feedback. Open to everyone — no invitation needed."
+msgstr "質問し、プロジェクトを共有し、率直なフィードバックを得るためのグローバルな場。招待は不要で、誰でも参加できます。"
+
+msgid "A working contact address and, where required, a data protection officer."
+msgstr "有効な連絡先と、必要に応じてデータ保護責任者。"
+
+msgid "About"
+msgstr "概要"
+
+msgid "About this topic"
+msgstr "このトピックについて"
+
+msgid "Access denied"
+msgstr "アクセスが拒否されました"
+
+msgid "Activate your %(site)s account"
+msgstr "%(site)s アカウントを有効化"
+
+msgid "Add context, examples and what you already tried."
+msgstr "背景、例、すでに試したことを書き添えてください。"
+
+msgid "Add context, what you tried, and what you need."
+msgstr "背景、試したこと、必要なことを書き添えてください。"
+
+msgid "All"
+msgstr "すべて"
+
+msgid "Already have an account?"
+msgstr "すでにアカウントをお持ちですか？"
+
+msgid "An account with this email already exists."
+msgstr "このメールアドレスは既に登録されています。"
+
+msgid "Ask, share, and build together."
+msgstr "質問し、共有し、一緒につくる。"
+
+msgid "At least 10 characters. Avoid common or numeric-only passwords."
+msgstr "10文字以上。よくあるパスワードや数字だけのパスワードは避けてください。"
+
+msgid "Back to discussions"
+msgstr "ディスカッションに戻る"
+
+msgid "Back to sign in"
+msgstr "サインインに戻る"
+
+msgid "Be kind. Critique ideas, not people."
+msgstr "親切に。批判するのはアイデアであり、人ではありません。"
+
+msgid "Be specific and kind."
+msgstr "具体的に、そして親切に。"
+
+msgid "Be the first to start a conversation here."
+msgstr "ここで最初の会話を始めましょう。"
+
+msgid "Before a public launch"
+msgstr "公開前の確認"
+
+msgid "Before you post"
+msgstr "投稿する前に"
+
+msgid "Breadcrumb"
+msgstr "パンくずリスト"
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "Categories"
+msgstr "カテゴリー"
+
+msgid "Category"
+msgstr "カテゴリー"
+
+msgid "Check your inbox"
+msgstr "受信トレイを確認"
+
+msgid "Choose a category"
+msgstr "カテゴリーを選択"
+
+msgid "Community"
+msgstr "コミュニティ"
+
+msgid "Community at a glance"
+msgstr "コミュニティの概要"
+
+msgid "Community guidelines"
+msgstr "コミュニティガイドライン"
+
+msgid "Confirm email"
+msgstr "メールを確認"
+
+msgid "Confirm password"
+msgstr "パスワード（確認）"
+
+msgid "Confirm your email"
+msgstr "メールアドレスを確認"
+
+msgid "Confirm your email address before posting."
+msgstr "投稿する前にメールアドレスの確認を完了してください。"
+
+msgid "Confirm your email first"
+msgstr "先にメールを確認してください"
+
+msgid "Confirmation links can only be used once. Request a fresh one and try again."
+msgstr "確認リンクは1回しか使えません。新しいリンクを取得してから再度お試しください。"
+
+msgid "Contact"
+msgstr "お問い合わせ"
+
+msgid "Contact us about these documents at"
+msgstr "これらの文書についてのご質問は"
+
+msgid "Copyright / DMCA agent and takedown workflow."
+msgstr "著作権 / DMCA 代理人と削除手続き。"
+
+msgid "Create account"
+msgstr "アカウントを作成"
+
+msgid "Create an account"
+msgstr "アカウントを作成"
+
+msgid "Create your account"
+msgstr "アカウントを作成"
+
+msgid "Data retention periods, sub-processors and international transfer mechanism."
+msgstr "データの保持期間、委託先、国際移転の仕組み。"
+
+msgid "Details (optional)"
+msgstr "詳細（任意）"
+
+msgid "Development mode"
+msgstr "開発モード"
+
+msgid "Discussions"
+msgstr "ディスカッション"
+
+msgid "Do not share passwords, private data or other people's content."
+msgstr "パスワード、個人情報、他人のコンテンツを共有しないでください。"
+
+msgid "Effective"
+msgstr "発効日"
+
+msgid "Effective date"
+msgstr "発効日"
+
+msgid "Email"
+msgstr "メールアドレス"
+
+msgid "Email confirmed"
+msgstr "メール確認済み"
+
+msgid "Email confirmed. You can sign in now."
+msgstr "メールを確認しました。サインインできます。"
+
+msgid "Email delivery is not configured, so here is the link:"
+msgstr "メール送信が未設定のため、確認リンクを表示します："
+
+msgid "Enter the email address you registered with. We will send a fresh single-use link."
+msgstr "登録したメールアドレスを入力してください。新しい1回限りのリンクをお送りします。"
+
+msgid "Fresh questions, answers and works in progress."
+msgstr "新しい質問、回答、進行中の作品。"
+
+msgid "Go to sign in"
+msgstr "サインインへ"
+
+msgid "Got it"
+msgstr "了解"
+
+msgid "Guidelines"
+msgstr "ガイドライン"
+
+msgid "Harassment or hate"
+msgstr "嫌がらせまたはヘイト"
+
+msgid "Hi %(username)s,"
+msgstr "%(username)s さん、"
+
+msgid "Hidden"
+msgstr "非表示"
+
+msgid "How we treat each other here, and what happens when a post crosses the line."
+msgstr "ここでの互いの接し方と、一線を越えた投稿の扱い。"
+
+msgid "Human verification failed. Please try again."
+msgstr "人間確認に失敗しました。もう一度お試しください。"
+
+msgid "I agree to the Terms of Service and Privacy Policy."
+msgstr "利用規約とプライバシーポリシーに同意します。"
+
+msgid "If an inactive account exists for that address, a new confirmation email is on its way."
+msgstr "その住所に未確認のアカウントがある場合、新しい確認メールを送信しています。"
+
+msgid "If you did not create this account, you can ignore this email."
+msgstr "このアカウントを作成していない場合は、このメールを無視してください。"
+
+msgid "It may have been moved, deleted, or the link may be incomplete."
+msgstr "移動・削除されたか、リンクが不完全な可能性があります。"
+
+msgid "It takes less than a minute."
+msgstr "1分もかかりません。"
+
+msgid "Join"
+msgstr "参加"
+
+msgid "Join the community"
+msgstr "コミュニティに参加"
+
+msgid "Join the conversation"
+msgstr "会話に参加"
+
+msgid "Joined"
+msgstr "参加日"
+
+msgid "Keep titles short and specific."
+msgstr "タイトルは短く具体的に。"
+
+msgid "Language"
+msgstr "言語"
+
+msgid "Latest"
+msgstr "最新"
+
+msgid "Latest discussions"
+msgstr "最新のディスカッション"
+
+msgid "Learn more"
+msgstr "詳細を見る"
+
+msgid "Legal"
+msgstr "法務"
+
+msgid "Legal documents"
+msgstr "法務文書"
+
+msgid "Legal entity name, registered address and jurisdiction."
+msgstr "法人名、所在地、準拠法。"
+
+msgid "Legal overview"
+msgstr "法務の概要"
+
+msgid "Locked"
+msgstr "ロック済み"
+
+msgid "Minimum age and rules for younger users."
+msgstr "最低年齢と未成年ユーザーのルール。"
+
+msgid "Moderate"
+msgstr "管理"
+
+msgid "Moderation"
+msgstr "モデレーション"
+
+msgid "Moderator"
+msgstr "モデレーター"
+
+msgid "New here?"
+msgstr "初めての方へ"
+
+msgid "New topic"
+msgstr "新しいトピック"
+
+msgid "Next"
+msgstr "次へ"
+
+msgid "No advertising trackers"
+msgstr "広告トラッカーなし"
+
+msgid "No discussions yet"
+msgstr "まだディスカッションがありません"
+
+msgid "No replies yet."
+msgstr "まだ返信がありません。"
+
+msgid "No replies yet. Start the conversation."
+msgstr "まだ返信がありません。会話を始めましょう。"
+
+msgid "No topics yet."
+msgstr "まだトピックがありません。"
+
+msgid "Not activated yet?"
+msgstr "まだ有効化していませんか？"
+
+msgid "Nothing matched that search. Try a shorter phrase."
+msgstr "一致する内容が見つかりませんでした。短いキーワードでお試しください。"
+
+msgid "Nothing yet? Check your spam folder, or resend after a minute."
+msgstr "届かない場合は迷惑メールフォルダを確認するか、しばらくしてから再送してください。"
+
+msgid "Off-topic / duplicate"
+msgstr "脱線 / 重複"
+
+msgid "One-time email confirmation"
+msgstr "1回限りのメール確認"
+
+msgid "Open MVP test build. Features and policies may change."
+msgstr "公開中の MVP テスト版です。機能とポリシーは変更される場合があります。"
+
+msgid "Open in admin"
+msgstr "管理画面で開く"
+
+msgid "Original poster"
+msgstr "トピック作成者"
+
+msgid "Other"
+msgstr "その他"
+
+msgid "Page %(number)s of %(total)s"
+msgstr "%(total)s ページ中 %(number)s ページ"
+
+msgid "Page not found"
+msgstr "ページが見つかりません"
+
+msgid "Pagination"
+msgstr "ページ送り"
+
+msgid "Password"
+msgstr "パスワード"
+
+msgid "Pick the closest category — moderators can move it later."
+msgstr "最も近いカテゴリーを選択してください。後でモデレーターが移動できます。"
+
+msgid "Pick up where you left off."
+msgstr "続きから再開しましょう。"
+
+msgid "Pinned"
+msgstr "ピン留め"
+
+msgid "Placeholder document"
+msgstr "プレースホルダー文書"
+
+msgid "Plain text. Line breaks are preserved."
+msgstr "プレーンテキスト。改行は保持されます。"
+
+msgid "Please add a little more detail."
+msgstr "もう少し詳細を書き添えてください。"
+
+msgid "Please use a permanent email address."
+msgstr "恒久的に使えるメールアドレスをご利用ください。"
+
+msgid "Please write a reply."
+msgstr "返信を入力してください。"
+
+msgid "Please write a slightly longer title."
+msgstr "タイトルをもう少し長く書いてください。"
+
+msgid "Popular"
+msgstr "人気"
+
+msgid "Post"
+msgstr "本文"
+
+msgid "Post in English, 中文, 日本語 or Español"
+msgstr "English、中文、日本語、Español で投稿できます"
+
+msgid "Post reply"
+msgstr "返信を投稿"
+
+msgid "Posting tips"
+msgstr "投稿のヒント"
+
+msgid "Previous"
+msgstr "前へ"
+
+msgid "Primary"
+msgstr "メインナビゲーション"
+
+msgid "Privacy Policy"
+msgstr "プライバシーポリシー"
+
+msgid "Protected by Cloudflare Turnstile."
+msgstr "Cloudflare Turnstile によって保護されています。"
+
+msgid "Protected by reCAPTCHA."
+msgstr "reCAPTCHA によって保護されています。"
+
+msgid "Publish topic"
+msgstr "トピックを公開"
+
+msgid "Questions"
+msgstr "ご質問"
+
+msgid "Rate limits"
+msgstr "レート制限"
+
+msgid "Read the guidelines"
+msgstr "ガイドラインを読む"
+
+msgid "Read the policy"
+msgstr "ポリシーを読む"
+
+msgid "Read the short guidelines, then introduce yourself in General."
+msgstr "短いガイドラインを読んでから、「雑談・一般」で自己紹介してください。"
+
+msgid "Read the terms"
+msgstr "利用規約を読む"
+
+msgid "Reason"
+msgstr "理由"
+
+msgid "Recent replies"
+msgstr "最近の返信"
+
+msgid "Recent topics"
+msgstr "最近のトピック"
+
+msgid "Registration is open worldwide. We ask for an email address so we can confirm you are a person and keep spammers out."
+msgstr "世界中で登録を受け付けています。人間であることを確認し、スパムを防ぐためにメールアドレスをお伺いします。"
+
+msgid "Registration is open. Email confirmation is required before posting, and rate limits keep the test environment usable."
+msgstr "登録受付中。投稿前にメール確認が必要です。テスト環境を維持するためレート制限があります。"
+
+msgid "Replies"
+msgstr "返信"
+
+msgid "Reply"
+msgstr "返信"
+
+msgid "Reply in"
+msgstr "返信先"
+
+msgid "Reply posted."
+msgstr "返信を投稿しました。"
+
+msgid "Report"
+msgstr "報告"
+
+msgid "Report content"
+msgstr "コンテンツを報告"
+
+msgid "Report spam, don't feed it."
+msgstr "スパムは報告し、反応しないでください。"
+
+msgid "Reports are private. Moderators will review the content and take action if it breaks the guidelines."
+msgstr "報告内容は非公開です。ガイドライン違反があればモデレーターが確認して対応します。"
+
+msgid "Request received"
+msgstr "リクエストを受け付けました"
+
+msgid "Resend activation email"
+msgstr "有効化メールを再送"
+
+msgid "Resend confirmation"
+msgstr "確認メールを再送"
+
+msgid "Resend confirmation email"
+msgstr "確認メールを再送"
+
+msgid "Resend email"
+msgstr "メールを再送"
+
+msgid "Resend the confirmation email"
+msgstr "確認メールを再送"
+
+msgid "Search before posting."
+msgstr "投稿する前に検索してください。"
+
+msgid "Search before starting a new topic."
+msgstr "新しいトピックを立てる前に検索してください。"
+
+msgid "Search for an existing thread first."
+msgstr "既存のスレッドがないか先に検索してください。"
+
+msgid "Search results"
+msgstr "検索結果"
+
+msgid "Search topics"
+msgstr "トピックを検索"
+
+msgid "See what is new"
+msgstr "新着を見る"
+
+msgid "Send a new link"
+msgstr "新しいリンクを送信"
+
+msgid "Send confirmation link"
+msgstr "確認リンクを送信"
+
+msgid "Server error"
+msgstr "サーバーエラー"
+
+msgid "Sign in"
+msgstr "サインイン"
+
+msgid "Sign in to reply, or create a free account."
+msgstr "返信するにはサインインするか、無料アカウントを作成してください。"
+
+msgid "Sign in with your username or the email address you registered with."
+msgstr "ユーザー名または登録メールアドレスでサインインしてください。"
+
+msgid "Sign out"
+msgstr "サインアウト"
+
+msgid "Skip to content"
+msgstr "本文へスキップ"
+
+msgid "Slow down for a moment"
+msgstr "少し間を置いてください"
+
+msgid "Something went wrong on our side"
+msgstr "サーバー側で問題が発生しました"
+
+msgid "Something went wrong. Please reload and try again."
+msgstr "問題が発生しました。ページを再読み込みしてお試しください。"
+
+msgid "Sort"
+msgstr "並び替え"
+
+msgid "Spam or advertising"
+msgstr "スパムまたは広告"
+
+msgid "Start a discussion"
+msgstr "ディスカッションを始める"
+
+msgid "Started"
+msgstr "開始日"
+
+msgid "Submit report"
+msgstr "報告を送信"
+
+msgid "Terms of Service"
+msgstr "利用規約"
+
+msgid "Terms, privacy and community rules"
+msgstr "規約、プライバシー、コミュニティルール"
+
+msgid "Thanks — our moderators will review this."
+msgstr "ありがとうございます。モデレーターが確認します。"
+
+msgid "That username is already taken."
+msgstr "このユーザー名は既に使われています。"
+
+msgid "That username is reserved."
+msgstr "このユーザー名は予約されています。"
+
+msgid "That was too quick. Please take a moment and submit again."
+msgstr "送信が速すぎます。少し待ってから再度お試しください。"
+
+msgid "The agreement between you and this community: accounts, content, acceptable use and liability."
+msgstr "あなたとこのコミュニティの間の合意：アカウント、コンテンツ、利用方法、責任。"
+
+msgid "The error has been logged. Please try again in a moment."
+msgstr "エラーは記録されました。しばらくしてから再度お試しください。"
+
+msgid "The link expires in %(hours)s hours and can be used once."
+msgstr "このリンクは %(hours)s 時間後に失効し、1回のみ使用できます。"
+
+msgid "The link is single-use and expires automatically."
+msgstr "このリンクは1回限りで、自動的に失効します。"
+
+msgid "The short version: be a real person, be decent to others, and tell us if something breaks."
+msgstr "要するに、実在の人物として、相手に敬意を払い、問題があれば知らせることです。"
+
+msgid "The two passwords do not match."
+msgstr "パスワードが一致しません。"
+
+msgid "These documents are placeholders for an MVP test. Replace the bracketed details and have counsel review:"
+msgstr "これらの文書は MVP テスト用のプレースホルダーです。括弧内の情報を置き換え、弁護士に確認を依頼してください："
+
+msgid "This is an MVP"
+msgstr "これは MVP です"
+
+msgid "This link expires in %(hours)s hours and can be used once."
+msgstr "このリンクは %(hours)s 時間後に失効し、1回のみ使用できます。"
+
+msgid "This link is invalid or expired"
+msgstr "このリンクは無効または失効しています"
+
+msgid "This page does not exist"
+msgstr "このページは存在しません"
+
+msgid "This test build allows a limited number of new topics per hour and per day. Limits reset automatically."
+msgstr "このテスト版では、1時間あたり・1日あたりの新規トピック数に制限があります。制限は自動的にリセットされます。"
+
+msgid "This text is a starting point, not legal advice. Have a qualified lawyer review and adapt it — including the entity name, jurisdiction, retention periods and contact details — before a public launch."
+msgstr "この文章は出発点であり、法的助言ではありません。公開前に、法人名、準拠法、保持期間、連絡先を含めて、資格のある弁護士に確認・調整を依頼してください。"
+
+msgid "This topic is locked."
+msgstr "このトピックはロックされています。"
+
+msgid "This topic is locked. New replies are disabled."
+msgstr "このトピックはロックされており、新しい返信はできません。"
+
+msgid "This will activate the account for %(email)s."
+msgstr "%(email)s のアカウントを有効化します。"
+
+msgid "Title"
+msgstr "タイトル"
+
+msgid "Too many requests"
+msgstr "リクエストが多すぎます"
+
+msgid "Topic"
+msgstr "トピック"
+
+msgid "Topics"
+msgstr "トピック"
+
+msgid "Try again in %(retry_after)s seconds."
+msgstr "%(retry_after)s 秒後に再度お試しください。"
+
+msgid "Unanswered"
+msgstr "未回答"
+
+msgid "Use 3–30 characters: letters, numbers and underscore only."
+msgstr "3〜30文字：半角英数字とアンダースコアのみ使用できます。"
+
+msgid "Username"
+msgstr "ユーザー名"
+
+msgid "Username or email"
+msgstr "ユーザー名またはメールアドレス"
+
+msgid "Verified"
+msgstr "確認済み"
+
+msgid "Version"
+msgstr "バージョン"
+
+msgid "Views"
+msgstr "閲覧"
+
+msgid "We send a one-time activation link. Use a permanent address."
+msgstr "1回限りの有効化リンクをお送りします。恒久的に使えるメールアドレスをご利用ください。"
+
+msgid "We sent a confirmation link to %(email)s."
+msgstr "%(email)s に確認リンクを送信しました。"
+
+msgid "We use essential cookies to keep you signed in and remember your language."
+msgstr "サインイン状態の維持と言語の記憶に必要な Cookie のみ使用します。"
+
+msgid "We will email you a confirmation link. Your account stays inactive until you confirm."
+msgstr "確認リンクをお送りします。確認が完了するまでアカウントは無効です。"
+
+msgid "Welcome back"
+msgstr "おかえりなさい"
+
+msgid "Welcome back."
+msgstr "おかえりなさい。"
+
+msgid "Welcome to %(site)s. Confirm your email address to finish creating your account:"
+msgstr "%(site)s へようこそ。登録を完了するため、メールアドレスを確認してください："
+
+msgid "What we collect, why we collect it, how long we keep it, and the rights you have over it."
+msgstr "収集する情報、その理由、保持期間、あなたの権利について。"
+
+msgid "Write a helpful reply…"
+msgstr "役に立つ返信を書きましょう…"
+
+msgid "Write in the language you are most comfortable with."
+msgstr "最も得意な言語で書いてください。"
+
+msgid "You cannot access this page"
+msgstr "このページにはアクセスできません"
+
+msgid "You have been signed out."
+msgstr "サインアウトしました。"
+
+msgid "You have made too many requests. This limit protects the community from spam and abuse."
+msgstr "リクエストが多すぎます。この制限はコミュニティをスパムや悪用から守るためのものです。"
+
+msgid "You must accept the Terms and Privacy Policy."
+msgstr "利用規約とプライバシーポリシーへの同意が必要です。"
+
+msgid "Your account is active, but we still need to confirm your email address before you can post."
+msgstr "アカウントは有効ですが、投稿する前にメールアドレスの確認が必要です。"
+
+msgid "Your account is active. You can sign in and start posting."
+msgstr "アカウントは有効です。サインインして投稿を始められます。"
+
+msgid "Your account may not have permission, or the security check on this request failed."
+msgstr "アカウントに権限がないか、このリクエストの安全確認に失敗しました。"
+
+msgid "Your topic is live."
+msgstr "トピックを公開しました。"
+
+msgid "ago"
+msgstr "前"
+
+msgid "members"
+msgstr "名"
+
+msgid "replies"
+msgstr "件の返信"
+
+msgid "topics"
+msgstr "件のトピック"
+
+msgid "views"
+msgstr "回閲覧"
+
+msgid "— %(site)s"
+msgstr "— %(site)s"

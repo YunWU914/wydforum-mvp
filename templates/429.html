@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Too many requests" %} — {{ site_name }}{% endblock %}
+
+{% block content %}
+<div class="auth-wrap auth-wrap-single">
+  <section class="card auth-card center-card">
+    <p class="eyebrow">429</p>
+    <h1>{% trans "Slow down for a moment" %}</h1>
+    <p>{% trans "You have made too many requests. This limit protects the community from spam and abuse." %}</p>
+    <p class="muted">{% blocktrans with retry_after=retry_after %}Try again in {{ retry_after }} seconds.{% endblocktrans %}</p>
+    <a class="btn btn-primary" href="{% url 'home' %}">{% trans "Back to discussions" %}</a>
+  </section>
+</div>
+{% endblock %}

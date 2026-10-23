@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<div class="legal-layout">
+  <article class="card legal-doc">
+    <div class="legal-banner" role="note">
+      <strong>{% trans "Placeholder document" %}</strong>
+      {% trans "This text is a starting point, not legal advice. Have a qualified lawyer review and adapt it — including the entity name, jurisdiction, retention periods and contact details — before a public launch." %}
+    </div>
+
+    <p class="eyebrow">{% trans "Legal" %}</p>
+    <h1>{% block legal_title %}{% endblock %}</h1>
+    <p class="legal-meta">
+      {% trans "Effective date" %}: {{ legal_effective_date }}
+      <span aria-hidden="true">·</span>
+      {% trans "Version" %}: MVP-1
+    </p>
+
+    {% block legal_body %}{% endblock %}
+  </article>
+
+  <aside class="sidebar">
+    <section class="card">
+      <h2>{% trans "Legal documents" %}</h2>
+      <ul class="legal-nav">
+        <li><a class="{% if page_key == 'terms' %}is-active{% endif %}" href="{% url 'legal_page' 'terms' %}">{% trans "Terms of Service" %}</a></li>
+        <li><a class="{% if page_key == 'privacy' %}is-active{% endif %}" href="{% url 'legal_page' 'privacy' %}">{% trans "Privacy Policy" %}</a></li>
+        <li><a class="{% if page_key == 'guidelines' %}is-active{% endif %}" href="{% url 'legal_page' 'guidelines' %}">{% trans "Community guidelines" %}</a></li>
+        <li><a href="{% url 'legal' %}">{% trans "Legal overview" %}</a></li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>{% trans "Questions" %}</h2>
+      <p class="muted">{% trans "Contact us about these documents at" %}<br>
+        <a href="mailto:{{ legal_contact_email }}">{{ legal_contact_email }}</a>
+      </p>
+      <p class="fineprint">{{ legal_company }}<br>{{ legal_jurisdiction }}</p>
+    </section>
+  </aside>
+</div>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Report content" %} — {{ site_name }}{% endblock %}
+
+{% block content %}
+<div class="auth-wrap auth-wrap-single">
+  <section class="card auth-card">
+    <p class="eyebrow">{% trans "Moderation" %}</p>
+    <h1>{% trans "Report content" %}</h1>
+    <p class="muted">{% trans "Reports are private. Moderators will review the content and take action if it breaks the guidelines." %}</p>
+
+    <div class="report-target">
+      {% if topic %}
+        <span class="report-label">{% trans "Topic" %}</span>
+        <a href="{{ topic.get_absolute_url }}">{{ topic.title }}</a>
+        <p>{{ topic.excerpt }}</p>
+      {% elif reply %}
+        <span class="report-label">{% trans "Reply in" %}</span>
+        <a href="{{ reply.topic.get_absolute_url }}">{{ reply.topic.title }}</a>
+        <p>{{ reply.body|truncatechars:220 }}</p>
+      {% endif %}
+    </div>
+
+    <form method="post">
+      {% csrf_token %}
+      {% include "partials/_field.html" with field=form.reason %}
+      {% include "partials/_field.html" with field=form.note %}
+      <div class="form-actions">
+        <button class="btn btn-primary" type="submit">{% trans "Submit report" %}</button>
+        <a class="btn btn-ghost" href="{% if topic %}{{ topic.get_absolute_url }}{% else %}{{ reply.topic.get_absolute_url }}{% endif %}">{% trans "Cancel" %}</a>
+      </div>
+    </form>
+  </section>
+</div>
+{% endblock %}

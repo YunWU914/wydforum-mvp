@@ -1,0 +1,47 @@
+# Local development: `docker compose up --build` then open http://localhost:8000
+# Demo accounts (created by seed_demo --demo below): ada / lin / kenji, password DemoPass!2026
+# (only when SEED_DEMO=1 and DEBUG=1; remove for anything semi-public).
+
+services:
+  web:
+    build: .
+    image: openforum-mvp:local
+    ports:
+      - "8000:8000"
+    environment:
+      DJANGO_DEBUG: ${DJANGO_DEBUG:-1}
+      DJANGO_SECRET_KEY: ${DJANGO_SECRET_KEY:-dev-insecure-change-me}
+      DJANGO_ALLOWED_HOSTS: ${DJANGO_ALLOWED_HOSTS:-localhost,127.0.0.1,0.0.0.0}
+
+      SITE_NAME: ${SITE_NAME:-OpenForum}
+      SITE_TAGLINE: ${SITE_TAGLINE:-A place to ask, share and build together.}
+      SITE_URL: ${SITE_URL:-http://localhost:8000}
+
+      # Anti-abuse: `none` locally, `turnstile` or `recaptcha` with keys in prod.
+      CAPTCHA_PROVIDER: ${CAPTCHA_PROVIDER:-none}
+      TURNSTILE_SITE_KEY: ${TURNSTILE_SITE_KEY:-}
+      TURNSTILE_SECRET_KEY: ${TURNSTILE_SECRET_KEY:-}
+      RECAPTCHA_SITE_KEY: ${RECAPTCHA_SITE_KEY:-}
+      RECAPTCHA_SECRET_KEY: ${RECAPTCHA_SECRET_KEY:-}
+
+      # Console email prints activation links to the container logs.
+      EMAIL_BACKEND: ${EMAIL_BACKEND:-django.core.mail.backends.console.EmailBackend}
+      EMAIL_HOST: ${EMAIL_HOST:-}
+      EMAIL_PORT: ${EMAIL_PORT:-587}
+      EMAIL_HOST_USER: ${EMAIL_HOST_USER:-}
+      EMAIL_HOST_PASSWORD: ${EMAIL_HOST_PASSWORD:-}
+      DEFAULT_FROM_EMAIL: ${DEFAULT_FROM_EMAIL:-OpenForum <no-reply@example.com>}
+
+      # Optional bootstrap admin (set these three to create it automatically).
+      DJANGO_SUPERUSER_USERNAME: ${DJANGO_SUPERUSER_USERNAME:-}
+      DJANGO_SUPERUSER_EMAIL: ${DJANGO_SUPERUSER_EMAIL:-}
+      DJANGO_SUPERUSER_PASSWORD: ${DJANGO_SUPERUSER_PASSWORD:-}
+
+      # Set SEED_DEMO=1 for demo users/topics on first run (dev only).
+      SEED_DEMO: ${SEED_DEMO:-0}
+    volumes:
+      - forum_data:/app/data
+    restart: unless-stopped
+
+volumes:
+  forum_data:

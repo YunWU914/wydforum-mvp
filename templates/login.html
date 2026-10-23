@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Sign in" %} — {{ site_name }}{% endblock %}
+
+{% block content %}
+<div class="auth-wrap auth-wrap-narrow">
+  <section class="auth-intro">
+    <p class="eyebrow">{% trans "Welcome back" %}</p>
+    <h1>{% trans "Pick up where you left off." %}</h1>
+    <p>{% trans "Sign in with your username or the email address you registered with." %}</p>
+  </section>
+
+  <section class="card auth-card">
+    <h2>{% trans "Sign in" %}</h2>
+
+    {% if form.non_field_errors %}
+      <div class="form-alert">{% for error in form.non_field_errors %}<p>{{ error }}</p>{% endfor %}</div>
+    {% endif %}
+
+    <form method="post" novalidate>
+      {% csrf_token %}
+      <input type="hidden" name="next" value="{{ next }}">
+      {% include "partials/_field.html" with field=form.username %}
+      {% include "partials/_field.html" with field=form.password %}
+      {% include "partials/_captcha.html" %}
+      {{ form.hp_field }}{{ form.ts }}
+      <button class="btn btn-primary btn-block" type="submit">{% trans "Sign in" %}</button>
+    </form>
+
+    <p class="auth-foot">{% trans "New here?" %} <a href="{% url 'register' %}">{% trans "Create an account" %}</a></p>
+    <p class="fineprint">{% trans "Not activated yet?" %} <a href="{% url 'resend_activation' %}">{% trans "Resend the confirmation email" %}</a></p>
+  </section>
+</div>
+{% endblock %}

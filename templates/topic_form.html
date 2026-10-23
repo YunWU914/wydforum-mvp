@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "New topic" %} — {{ site_name }}{% endblock %}
+
+{% block content %}
+<nav class="breadcrumb" aria-label="{% trans 'Breadcrumb' %}">
+  <a href="{% url 'home' %}">{% trans "Discussions" %}</a>
+  <span aria-hidden="true">/</span>
+  <span>{% trans "New topic" %}</span>
+</nav>
+
+<div class="layout layout-form">
+  <section>
+    <div class="page-head">
+      <div>
+        <h1 class="page-title">{% trans "Start a discussion" %}</h1>
+        <p class="page-sub">{% trans "A clear title and a little context go a long way." %}</p>
+      </div>
+    </div>
+
+    <form method="post" class="card form-card" novalidate>
+      {% csrf_token %}
+      {% if form.non_field_errors %}
+        <div class="form-alert">{% for error in form.non_field_errors %}<p>{{ error }}</p>{% endfor %}</div>
+      {% endif %}
+      {% include "partials/_field.html" with field=form.category %}
+      {% include "partials/_field.html" with field=form.title %}
+      {% include "partials/_field.html" with field=form.body %}
+      {% include "partials/_captcha.html" %}
+      {{ form.hp_field }}{{ form.ts }}
+      <div class="form-actions">
+        <button class="btn btn-primary" type="submit">{% trans "Publish topic" %}</button>
+        <a class="btn btn-ghost" href="{% url 'home' %}">{% trans "Cancel" %}</a>
+      </div>
+    </form>
+  </section>
+
+  <aside class="sidebar">
+    <section class="card card-accent">
+      <h2>{% trans "Before you post" %}</h2>
+      <ul class="tips">
+        <li>{% trans "Search for an existing thread first." %}</li>
+        <li>{% trans "Pick the closest category — moderators can move it later." %}</li>
+        <li>{% trans "Do not share passwords, private data or other people's content." %}</li>
+        <li>{% trans "Write in the language you are most comfortable with." %}</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>{% trans "Rate limits" %}</h2>
+      <p class="muted">{% trans "This test build allows a limited number of new topics per hour and per day. Limits reset automatically." %}</p>
+    </section>
+  </aside>
+</div>
+{% endblock %}

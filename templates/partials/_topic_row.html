@@ -1,0 +1,23 @@
+{% load i18n %}
+<article class="topic-row">
+  <a class="avatar" href="{% url 'profile' topic.author.username %}" aria-hidden="true" tabindex="-1">{{ topic.author.username|slice:":2"|upper }}</a>
+  <div class="topic-main">
+    <div class="topic-heading">
+      {% if topic.is_pinned %}<span class="badge badge-pin">{% trans "Pinned" %}</span>{% endif %}
+      {% if topic.is_locked %}<span class="badge">{% trans "Locked" %}</span>{% endif %}
+      <a class="topic-title" href="{{ topic.get_absolute_url }}">{{ topic.title }}</a>
+    </div>
+    <p class="topic-excerpt">{{ topic.excerpt }}</p>
+    <div class="topic-meta">
+      <a href="{% url 'profile' topic.author.username %}">{{ topic.author.username }}</a>
+      <span aria-hidden="true">·</span>
+      <span>{{ topic.category.name }}</span>
+      <span aria-hidden="true">·</span>
+      <time datetime="{{ topic.created_at|date:'c' }}">{{ topic.created_at|timesince }} {% trans "ago" %}</time>
+    </div>
+  </div>
+  <div class="topic-count" aria-label="{% trans 'Replies' %}">
+    <strong>{{ topic.reply_count }}</strong>
+    <span>{% trans "replies" %}</span>
+  </div>
+</article>

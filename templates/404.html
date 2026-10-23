@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Page not found" %} — {{ site_name }}{% endblock %}
+
+{% block content %}
+<div class="auth-wrap auth-wrap-single">
+  <section class="card auth-card center-card">
+    <p class="eyebrow">404</p>
+    <h1>{% trans "This page does not exist" %}</h1>
+    <p>{% trans "It may have been moved, deleted, or the link may be incomplete." %}</p>
+    <div class="stack-actions">
+      <a class="btn btn-primary" href="{% url 'home' %}">{% trans "Back to discussions" %}</a>
+      <a class="btn btn-secondary" href="{% url 'home' %}?sort=latest">{% trans "See what is new" %}</a>
+    </div>
+  </section>
+</div>
+{% endblock %}
